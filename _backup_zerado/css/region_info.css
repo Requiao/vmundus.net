@@ -1,0 +1,805 @@
+/* region info */
+#country_name_flag {
+	position: relative;
+    height: 120px;
+    float: left;
+    width: 100%;
+}
+#country_flag {
+	width: 140px;
+    height: 70px;
+	position: absolute;
+    left: 10px;
+    top: 25px;
+	border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgb(87,87,87);
+}
+#country_name {
+	position: absolute;
+    left: 170px;
+    top: 35px;
+    font-size: 35px;
+	color: rgb(35, 81, 105);
+}
+#under_attack {
+	width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(204, 74, 74);
+}
+#under_attack a {
+	color: rgb(7, 130, 193);
+}
+.mini_flag {
+	width: 70px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 5px;
+    float: left;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px rgb(87,87,87);
+}
+
+/* sub divs */
+.shi_details {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(131, 131, 131);
+}
+.shi_details img {
+	margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+.shi_country_name {
+    float: left;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.shid_col1 {
+    float: left;
+    width: 50%;
+}
+.shid_col2 {
+    float: left;
+    width: 50%;
+}
+
+/* core owners */
+.core_expiration {
+    float: left;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+/* moral */
+#defenders_moral {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    font-size: 25px;
+    font-family: "Calibri";
+    box-shadow: inset 0 0px 20px 1px rgba(76, 76, 76, 0.9);
+    background-color: rgb(75, 118, 167);
+    border-radius: 3px;
+}
+#make_core_label {
+    float: left;
+    margin-left: 5px;
+    line-height: 45px;
+    margin-top: 15px;
+}
+#make_core {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+#make_core_ok {
+    float: left;
+    margin-left: 115px;
+    margin-top: 10px;
+}
+
+#core_creation_bar_div {
+    float: left;
+    clear: left;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgb(183, 182, 182);
+    background-color: rgb(227, 227, 227);
+    box-shadow: inset 0px 0px 3px 0px #888888;
+    width: 500px;
+    margin-left: 6px;
+}
+#core_creation_progress {
+    height: 30px;
+    box-shadow: inset 0px 0px 7px 0px rgb(0, 0, 0);
+    background: repeating-linear-gradient( 135deg, 
+        rgb(76, 131, 181), 
+        rgb(76, 131, 181) 10px, 
+        rgb(51, 90, 125) 10px, 
+        rgb(51, 90, 125) 20px 
+    );
+}
+#core_creation_bar_div p {
+    margin-top: -30px;
+    color: white;
+}
+
+/* is coastal */
+.crb_coastal_region {
+	float: left;
+    clear: left;
+	margin-left: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.crb_coastal_region p {
+	float: left;
+    color: #1e495b;
+    font-weight: bold;
+	margin-left: 25px;
+}
+.crb_coastal_region img {
+	float: left;
+    width: 65px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgb(87,87,87);
+}
+
+/* chart */
+.country_stat_div {
+    float: left;
+    margin-left: 30px;
+    width: 850px;
+	margin-bottom: 20px;
+}
+.difth {
+    width: 801px !important;
+    float: right;
+}
+svg text {
+	font-family: 'Space Mono', monospace;
+	font-size: 17px;
+}
+#cdi_rext_back{
+	fill:rgb(255, 255, 255);
+	stroke:rgb(0,0,0);
+}
+.chart_line_break {
+	stroke:rgb(199, 199, 199);
+	stroke-width:1;
+}
+.day_num_chart {
+	font-family: Enriqueta;
+	font-size: 15px;
+}
+.stat_tree:hover {
+	stroke-width: 2;
+    stroke: rgb(52, 75, 97);
+}
+
+/* region defence system */
+#region_defence_system_info {
+    float: left;
+    margin-left: 15px;
+	margin-bottom: 20px;
+    width: 300px;
+}
+#defence_system_img {
+	width: 300px;
+    height: 150px;
+	float: left;
+    margin-top: 5px;
+}
+#upgrade_def_sys {
+    float: left;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(76, 131, 181);
+    box-shadow: inset 0px 0px 9px 3px rgb(51, 90, 125);
+    cursor: pointer;
+	color: white;
+}
+#upgrade_def_sys:active {
+	box-shadow: none;
+}
+#position_bar_div {
+    float: left;
+    clear: left;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgb(183, 182, 182);
+    background-color: rgb(227, 227, 227);
+    box-shadow: inset 0px 0px 3px 0px #888888;
+	width: 298px;
+}
+#position_progress {
+	background: repeating-linear-gradient( 
+		45deg, 
+		rgb(76, 131, 181), 
+		rgb(76, 131, 181) 10px, 
+		rgb(51, 90, 125) 10px, 
+		rgb(51, 90, 125) 20px 
+	);
+	height: 30px;
+}
+#position_bar_div p {
+	margin-top: -30px;
+    color: white;
+}
+#position_info {
+	float: left;
+    width: 300px;
+    text-align: center;
+	color: black;
+}
+
+#defence_repair_div {
+    float: left;
+    margin-top: 10px;
+	margin-left: 30px;
+}
+.repair_product_info {
+    float: left;
+    width: 110px;
+    margin-left: 10px;
+    margin-right: 10px;
+	margin-bottom: 10px;
+	margin-top: 25px;
+    height: 130px;
+    box-shadow: 0px -1px 5px 2px #345879;
+}
+.repair {
+    background-color: rgb(128, 182, 109);
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    cursor: pointer;
+}
+.repair:active {
+	box-shadow: inset 0px 0px 5px rgb(87,87,87);
+}
+
+/* repair */
+#repair_system_div {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#repair_apply {
+    float: left;
+    margin-left: 115px;
+    margin-top: 10px;
+	clear: left;
+}
+#rsd_available_product {
+    float: left;
+    clear: left;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+#rsd_use_prod_input {
+    float: left;
+    width: 170px;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/* upgrade */
+#upgrade_system_div {
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+    background-color: white;
+    box-shadow: 0px 2px 5px 2px #345879;
+    font-family: Enriqueta;
+    font-size: 20px;
+    position: relative;
+    overflow: auto;
+}
+#upgrade_system_div #reply_ok {
+	margin-left: 315px !important;
+}
+#usd_def_info {
+    float: left;
+    margin: 15px;
+    width: 200px;
+    box-shadow: 0px 0px 3px 0px #345879;
+}
+#usd_def_img {
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-top: 5px;
+}
+#usd_strength {
+   float: left;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(76, 131, 181);
+    box-shadow: inset 0px 0px 9px 3px rgb(51, 90, 125);
+    color: white;
+}
+#usd_time {
+    float: left;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(151, 151, 151);
+    box-shadow: inset 0px 0px 9px 3px rgb(125, 125, 125);
+    color: white;
+}
+#upgrade_system_div .icon_amount {
+	margin-top: 45px;
+}
+#upgrade_ok {
+    float: left;
+    clear: left;
+    margin-left: 210px;
+    margin-top: 10px;
+}
+
+#region_upgrade_system_div {
+    float: left;
+    clear: left;
+    color: black;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+#rusd_head {
+    width: 100%;
+    text-align: center;
+}
+#upgrade_end_in {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(151, 151, 151);
+    box-shadow: inset 0px 0px 9px 3px rgb(125, 125, 125);
+}
+#upgrading_def_strength {
+    float: left;
+    width: 300px;
+    text-align: center;
+    color: white;
+    background-color: rgb(76, 131, 181);
+    box-shadow: inset 0px 0px 9px 3px rgb(51, 90, 125);
+}
+
+/* road */
+.cr_region_road {
+    float: left;
+    clear: left;
+    box-shadow: 0px 0px 3px 1px #345879;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 500px;
+}
+.cr_region_road img {
+    float: left;
+    background: radial-gradient(circle, #ffffff, #ebf1f875, #61abff75);
+    width: 500px;
+}
+.cr_region_road .crrr_level {
+    float: left;
+    clear: left;
+    background-color: #345879;
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.crrr_durability_div {
+    float: left;
+    width: 100%;
+}
+.crrr_durability_div p {
+    margin-top: -28px;
+    text-align: center;
+}
+.crrr_bonus {
+    float: left;
+    clear: left;
+    background-color: #345879;
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+
+#upgrade_road_info_div {
+    width: 910px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 125px;
+    background-color: white;
+    box-shadow: 0px 2px 5px 2px #345879;
+    font-family: Enriqueta;
+    font-size: 20px;
+    position: relative;
+    overflow: auto;
+}
+#urid_road_info {
+    float: left;
+    clear: left;
+    box-shadow: 0px 0px 3px 1px #345879;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 350px;
+}
+#urid_road_img {
+    float: left;
+    background: radial-gradient(circle, #ffffff, #ebf1f875, #61abff75);
+    width: 350px;
+}
+#urid_road_level {
+    float: left;
+    clear: left;
+    background-color: #345879;
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+#urid_durability {
+    float: left;
+    clear: left;
+    background-color: rgb(128, 182, 109);
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+#urid_bonus {
+    float: left;
+    clear: left;
+    background-color: #345879;
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+#upgrade_road {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(76, 131, 181);
+    box-shadow: inset 0px 0px 9px 3px rgb(51, 90, 125);
+    cursor: pointer;
+    color: white;
+}
+#upgrade_road:active, #repair_road_ok:active {
+	box-shadow: none;
+}
+#upgrade_road_ok {
+    float: left;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+#repair_road_ok {
+    float: left;
+    clear: left;
+    margin-left: 295px;
+    margin-top: 10px;
+}
+#repair_road {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(181, 76, 76);
+    box-shadow: inset 0px 0px 9px 3px rgb(125, 51, 51);
+    cursor: pointer;
+    color: white;
+}
+.crrr_durability_div .orange {
+	background-color: rgb(223, 163, 58);
+}
+.crrr_durability_div .green {
+	background-color: rgb(128, 182, 109);
+}
+.crrr_durability_div .red {
+	background-color: rgb(246, 120, 74);
+}
+
+/* resistance */
+#rcd_heads {
+    font-weight: 700;
+}
+.war_prep_info_div {
+    float: right;
+    margin-right: 10px;
+}
+.war_prep_res_coll_lbl {
+    float: left;
+    margin-top: 8px;
+}
+.war_bar {
+    width: 200px;
+    height: 25px;
+    background-color: rgb(227, 227, 227);
+    border-radius: 3px;
+    color: black;
+    text-align: center;
+    background-size: 25% 25px;
+    border: 1px solid #b7b6b6;
+    box-shadow: inset 0px 1px 3px 0px #888888;
+    float: left;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.progress {
+    height: 25px;
+}
+.bar_mark {
+    margin-top: -28px;
+    float: left;
+    width: 100%;
+}
+.support_resistance {
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* support resistance */
+#msg_reply {
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.support_rec_input {
+    float: left;
+    width: 107px;
+    height: 20px;
+    font-size: 20px;
+	text-align: center;
+	font-family: monospace;
+}
+.support_rw {
+    background-color: rgb(116, 160, 101);
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    cursor: pointer;
+	text-align: center;
+}
+.support_rw:active {
+	box-shadow: inset 0px 0px 5px rgb(87,87,87);
+}
+
+/* revolt */
+#revolt_countries_div {
+    width: 350px;
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: white;
+    max-height: 300px;
+    z-index: 1;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.rcd_country:hover {
+    background-color: #cecece;
+}
+.rcd_country {
+    float: left;
+    clear: both;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+#revolt_countries_div p {
+    float: left;
+    line-height: 40px;
+}
+#rcd_cost_label {
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+#revolt {
+    float: right;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+#request_new_country_div {
+    float: left;
+    clear: both;
+    text-decoration: underline;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#rnc_label {
+    float: left;
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* region companies */
+.top_secret {
+	width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: #d94343;
+    border-radius: 5px;
+    margin: 5px;
+    border: 3px solid #d94343;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+#rcd_citiz {
+    float: left;
+    margin-left: 290px;
+}
+#rcd_nation {
+    float: left;
+    margin-left: 250px;
+}
+.building_icon {
+    width: 200px;
+    height: 100px;
+    margin: 5px 0 5px 5px;
+    float: left;
+}
+.rcd_building_name {
+    float: left;
+    margin-left: 20px;
+    width: 400px;
+    margin-top: 35px;
+}
+.rcd_quantity {
+    float: left;
+    margin-left: 10px;
+    margin-top: 35px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(47, 109, 179);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+}
+
+/* request new country */
+#create_country_div input {
+    width: 400px;
+    float: left;
+    clear: both;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+}
+#create_country_div p {
+    float: left;
+    clear: both;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+#ccd_country_flag {
+    font-size: 20px !important;
+    font-family: "Times New Roman" !important;
+}
+#requesting_country {
+    padding: 10px;
+}
+#rc_heading {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #954444;
+}
+#rc_country_flag {
+    float: left;
+    clear: left;
+    margin-left: 20px;
+    width: 140px;
+    height: 70px;
+}
+#rc_country_name {
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+/* reply */
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#msg, .modal_notification {
+	font-family: Enriqueta;
+    font-size: 20px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 220px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#error {
+	font-size: 30px;
+    margin-top: 8px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}
+#reply_info span {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+#cancel {
+	float: left;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

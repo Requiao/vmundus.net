@@ -1,0 +1,247 @@
+body {
+	width:100%;
+	margin:0;
+	padding:0;
+	min-width:1200px;
+	background-color:rgb(245,246,247);
+}
+p {
+	margin:0;
+	padding:0;
+}
+a {
+	text-decoration:none;
+	color:white;
+}
+#container {
+	width:75.8333333%;
+	min-width:910px;
+	float:left;
+	margin-left:2.5%;
+	margin-bottom:10px;
+	font-size:20px;
+	font-family: Enriqueta;
+	background-color:white;
+	box-shadow: 0px 1px 2px rgb(87,87,87);
+	position:relative;
+	margin-top:20px;
+}
+#page_head {
+	float: left;
+    width: 100%;
+    background-color: rgb(105, 169, 202);
+    box-shadow: inset 0px 0px 25px 0px rgb(72, 120, 139);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* top */
+#top {
+	background-image: url(../img/top.png);
+    background-repeat: repeat;
+	background-size: 100% 100px;
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+#logo {
+	position: absolute;
+    width: 300px;
+    top: 15px;
+    left: 25px;
+}
+#clock_info_div {
+    width: 360px;
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 65px;
+    font-family: 'Times New Roman';
+}
+#clock {
+    float: left;
+    width: 265px;
+}
+#day_number {
+    float: left;
+    text-align: left;
+    width: 90px;
+    margin-left: 5px;
+}
+
+/* menu */
+#popular_posts_div {
+    float: left;
+    width: 16.6666667%;
+    min-width: 200px;
+    margin-left: 2.5%;
+    margin-top: 20px;
+    font-family: Enriqueta;
+    font-size: 20px;
+    background-color: white;
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+    border-radius: 3px;
+}
+#ppd_heading {
+    background-color: #f1f1f1;
+    padding: 8px 16px;
+    font-size: 25px;
+    font-family: "Raleway", sans-serif;
+}
+.ppd_post_name {
+    float: left;
+    width: 96%;
+    padding: 8px 2%;
+    border-bottom: 1px solid #ddd;
+    font-family: "Raleway", sans-serif;
+	color: rgb(7, 130, 193);
+}
+.ppd_post_title {
+    width: 100%;
+    float: left;
+}
+.ppd_post_name:visited {
+	color: rgb(152, 152, 152) !important;
+}
+.ppd_post_name:hover {
+	background-color: #d1d1d1;
+}
+.ppd_blogger_name {
+    float: left;
+    margin-top: 10px;
+    font-size: 17px;
+    color: black;
+}
+.ppd_post_data {
+    float: right;
+    margin-top: 10px;
+    font-size: 17px;
+    color: black;
+    text-align: right;
+}
+
+/* post display */
+#default_post {
+	background-color: white;
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+    border-radius: 3px;
+    margin-top: 20px;
+    height: 610px;
+	padding: 10px;
+}
+#default_post a {
+	color:rgb(7, 130, 193);
+}
+#posts_container {
+    width: 75.8333333%;
+    min-width: 910px;
+    float: right;
+    margin-right: 2.5%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: Enriqueta;
+    position: relative;
+}
+.post_details {
+    float: left;
+    width: 100% !important;
+	overflow: initial !important;
+	min-width: 100%;
+    margin-top: 35px;
+	margin-bottom: 20px;
+    border: 1px solid rgb(208, 208, 208);
+	box-shadow: 0 0px 4px 0 rgba(0,0,0,0.2), 0 4px 10px 0 rgba(0,0,0,0.19);
+	background-color: white;
+	position: relative;
+}
+.post_blog_img {
+    width: 150px;
+    height: 75px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+	margin-bottom: 5px;
+	float: left;
+}
+.blog_name_link {
+    text-decoration: none;
+    color: rgb(0, 0, 0) !important;
+    font-size: 30px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.post_date {
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    font-family: "Raleway", sans-serif;
+    color: #494949;
+}
+.post_title {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    background-color: #e8e7e7;
+	text-decoration: none;
+    color: rgb(0, 0, 0) !important;
+    font-style: italic;
+	overflow: hidden;
+}
+.post_div {
+    float: left;
+    width: 98%;
+    color: rgb(51, 51, 51);
+    margin: 1%;
+	font-family: initial;
+	font-size: initial;
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+}
+.post_div blockquote {
+	font-style: italic;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+}
+.post_div span {
+	float:inherit;
+}
+.post_div a {
+	color: rgb(7, 130, 193) !important;
+	text-decoration: underline;
+}
+.post_div img {
+	max-width: 100%;
+}
+
+.post_views_likes_div {
+    float: right;
+    color: rgb(51, 51, 51);
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-family: initial;
+    font-size: 20px;
+}
+.likes i {
+	cursor: pointer;
+}
+.views, .likes  {
+    float: right;
+    margin-right: 20px;
+}
+
+.fb-share-button {
+	float: right;
+    margin-bottom: 5px;
+    margin-right: 25px;
+}

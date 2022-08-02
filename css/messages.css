@@ -1,0 +1,316 @@
+/* menu */
+#send_msg:active {
+	box-shadow: inset -1px -1px 5px rgb(87,87,87) !important;
+}
+#delete_messages {
+	box-shadow:none;
+	margin-left: 10px;
+    margin-top: 7px;
+	background-color: rgb(245, 82, 88);
+	box-shadow: 0px 2px 3px rgb(87,87,87);
+}
+#messages {
+	background-color: #c95b5b;
+    color: white;
+    width: 130px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    float: left;
+	margin-top: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+#notifications {
+	background-color: #5ba1c9;
+    color: white;
+    width: 130px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    float: left;
+    margin-left: 5px;
+    margin-top: 25px;
+	cursor:pointer;
+}
+#compose_message {
+    float: right;
+    margin-right: 20px;
+    background-color: rgb(110, 177, 115);
+    color: white;
+    width: 205px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 7px;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px rgb(87,87,87);
+}
+#messages:active, #notifications:active, #compose_message:active {
+	box-shadow: inset -1px -1px 5px rgb(87,87,87);
+}
+
+/* messages */
+.checkboxes {
+	float: left;
+    width: 10%;
+    height: 30px;
+    margin-top: 30px;
+}
+#messages_inner_div {
+	width: 98.9%;
+	min-width: 900px;
+    margin-left: 5px;
+    margin-right: 5px;
+    float: left;
+    border-top: 1px solid rgb(88, 88, 88);
+    clear: left;
+    display: none;	
+}
+#messages_inner_div a {
+	color:black;
+}
+.messages_read {
+	background-color:rgb(244,244,244);
+}
+.unread_by_me {
+	background-color:rgb(255,255,255);
+}
+.unread_by_other {
+	background-color:rgb(255, 233, 233);
+}
+.all_messages_div {
+	height: 125px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    float: left;
+    width: 100%;
+    margin-top: 2px;
+}
+.all_messages {
+	float: left;
+    width: 90%;
+    display: block;
+    position: relative;
+}
+.name {
+	position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.all_messages .user_image {
+	height: 91px;
+    width: 70px;
+    float: left;
+    margin-top: 28px;
+	box-shadow: 0px 0px 1px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.heading {
+	font-weight: 600;
+    font-family: serif;
+    font-size: 20px;
+    position: absolute;
+    left: 260px;
+    top: 0px;
+    width: 400px;
+    text-align: center;
+}
+.deleted {
+    position: absolute;
+    right: 10px;
+    color: #d02c2c;
+}
+.short_message {
+	font-family: serif;
+    font-size: 18px;
+    height: 85px;
+    max-width: 70%;
+    overflow: hidden;
+    color: rgba(70, 70, 70, 1);
+    position: absolute;
+    left: 90px;
+    top: 30px;
+}
+.short_message img {
+	max-width: 550px;
+}
+.date {
+	float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+/* notifications */
+#notifications_div {
+    display:none;
+    font-family: "Calibri";
+    font-size: 22px;
+    width: 100%;
+    min-width: 900px;
+    float: left;
+    border-top: 1px solid rgb(88, 88, 88);
+    clear: left;
+}
+.all_notifications {
+	float: left;
+    width: 99.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0.5%;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+.all_notifications:nth-child(even) {
+    background-color: rgb(232, 232, 232);
+}
+#notifications_div a {
+	color: rgb(7, 130, 193);
+}
+.notification {
+	float: left;
+	max-width: 85%;
+}
+.note_date {
+	float: right;
+    margin-right: 10px;
+}
+.notification_read {
+	color:black;
+}
+.notification_unread {
+	color:rgb(193, 84, 84);
+}
+
+/* popup window */
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#msg {
+	font-family: Enriqueta;
+    font-size: 20px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#delete_ok {
+	float: left;
+    clear: left;
+    margin-left: 130px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 220px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#cancel {
+	float: left;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#ok {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+#error {
+	font-size: 30px;
+    margin-top: 8px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88);
+}
+
+/* compose message */
+#compose_msg_div {
+	width:750px;
+	max-width: 750px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 50px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#message_form_close {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+    color: rgb(244,57,64);
+    font-size: 25px;
+    cursor: pointer;
+}
+#message_heading {
+	font-size: 25px;
+    text-align: center;
+}
+#message_heading_input {
+	height: 40px;
+    width: 700px;
+    font-size: 30px;
+    font-family: Enriqueta;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	float: left;
+}
+#message_to {
+	height: 40px;
+    width: 100px;
+    font-size: 30px;
+    font-family: Enriqueta;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+    clear: both;
+}
+#cke_message_input {
+	width: 700px;
+    font-size: 30px;
+    font-family: Enriqueta;
+    margin-left: 25px;
+	margin-top: 5px;
+	float: left;
+	clear: both;
+}
+#compose {
+	background-color: rgb(112, 163, 114);
+    width: 705px;
+    height: 30px;
+    color: white;
+    font-family: Cantata One;
+    font-size: 25px;
+    text-align: center;
+    line-height: 100%;
+    padding-top: 10px;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px rgb(87,87,87);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 25px;
+	float: left;
+	clear: both;
+}
+#compose:active {
+	box-shadow: none;
+}
+#msg_reply {
+    width: 700px;
+    margin-left: 25px;
+    color: #da2121;
+}

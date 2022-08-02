@@ -1,0 +1,214 @@
+/* company div */
+.comp_info_div {
+    border: 1px solid rgb(63, 108, 158);
+    width: 98%;
+    margin-left: 1%;
+    float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    font-size: 18px;
+}
+.cid_seller_name {
+    color: black;
+    float: left;
+    margin-left: 5px;
+}
+.sid_seller_img {
+    width: 100px;
+    height: 130px;
+    float: left;
+    clear: left;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.sid_company_name {
+    float: left;
+    margin-left: 15px;
+    text-align: center;
+    margin-top: -25px;
+}
+.sid_company_img {
+    width: 250px;
+    height: 125px;
+    float: left;
+    margin-left: 5px;
+}
+.cid_fp {
+    float: left;
+    width: 500px;
+    height: 85px;
+    margin-left: 5px;
+    margin-top: -25px;
+    position: relative;
+	margin-bottom: 25px;
+}
+.sid_building_name_head {
+    position: absolute;
+    width: 150px;
+    font-family: Amiri;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.sid_building_name {
+    position: absolute;
+    width: 150px;
+    top: 25px;
+}
+.sid_region_head {
+    position: absolute;
+    left: 175px;
+    width: 150px;
+    font-family: Amiri;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.sid_region {
+    position: absolute;
+    left: 175px;
+    width: 150px;
+    top: 25px;
+    color: #2e2e2e;
+	word-wrap: break-word;
+}
+.sid_country_head {
+    position: absolute;
+    left: 350px;
+    width: 150px;
+    font-family: Amiri;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.sid_country {
+    position: absolute;
+    left: 350px;
+    width: 150px;
+    top: 25px;
+    color: #2e2e2e;
+    word-wrap: break-word;
+}
+
+.cid_sp {
+    float: left;
+    width: 545px;
+    height: 85px;
+    margin-left: 5px;
+    margin-top: -25px;
+    position: relative;
+}
+.sid_prod_ware_head {
+    position: absolute;
+    width: 225px;
+    font-family: Amiri;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.sid_prod_ware {
+    position: absolute;
+    width: 150px;
+    top: 25px;
+}
+.sid_rec_ware_head {
+    position: absolute;
+    left: 240px;
+    width: 225px;
+    font-family: Amiri;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.sid_rec_ware {
+    position: absolute;
+    left: 240px;
+    width: 150px;
+    top: 25px;
+}
+.sid_level_head {
+    position: absolute;
+    left: 465px;
+    width: 80px;
+    font-family: Amiri;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.sid_level {
+    position: absolute;
+    left: 465px;
+    width: 80px;
+    top: 25px;
+}
+.sid_price {
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(47, 109, 179);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+    width: 204px;
+    text-align: center;
+    float: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+	font-size: 20px;
+}
+.buy {
+    float: right;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+#buy_yes {
+    float: left;
+    clear: left;
+    margin-top: 5px;
+    margin-left: 130px;
+    margin-bottom: 10px;
+}
+
+/* reply */
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#msg {
+	font-family: Enriqueta;
+    font-size: 20px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 220px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#error {
+	font-size: 30px;
+    margin-top: 8px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}
+#reply_info span {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+#cancel {
+	float: left;
+    margin-left: 50px;
+	margin-top: 5px;
+    margin-bottom: 10px;
+}

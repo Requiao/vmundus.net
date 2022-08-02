@@ -1,0 +1,179 @@
+/* search parameters div */
+.search_par_div {
+    float: left;
+    clear: left;
+    width: 500px;
+}
+#spd_days_in_game {
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#from_days {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    width: 122px;
+    text-align: center;
+}
+#to_days {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+    width: 122px;
+    text-align: center;
+}
+#spd_plr_name {
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#player_name {
+    float: left;
+    margin-left: 14px;
+    margin-top: 10px;
+    font-size: 25px;
+    width: 260px;
+    text-align: center;
+}
+
+/* country list */
+#country_list {
+	height: 35px;
+    border: 1px solid rgb(163, 163, 163);
+    float: right;
+    width: 330px;
+    margin-left: 5px;
+	margin-right: 5px;
+    background-color: white;
+	cursor:pointer;
+	position:relative;
+	margin-top: 10px;
+}
+#country_list span {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+}
+#countries_div {
+	display:none;
+	overflow: auto;
+    height: 265px;
+    width: 330px;
+    right: 6px;
+    position: absolute;
+    top: 86px;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 3px solid rgb(163, 163, 163);
+	cursor:pointer;
+	z-index: 1;
+}
+.country {
+	width: 100%;
+    height: 45px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+#country {
+	width: 100%;
+    height: 35px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+.country:hover {
+	background-color: rgb(155, 155, 155);
+    color: white;
+}
+#country img {
+	width: 55px;
+	height: 35px;
+    float: left;
+	clear: left;
+}
+.country img {
+	width: 55px;
+    height: 35px;
+    float: left;
+    clear: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.country p, #country p {
+	float: left;
+    margin: 0;
+    margin-left: 5px;
+    font-family: Enriqueta;
+    font-size: 20px;
+    margin-top: 6px;
+}
+#find_players {
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+	clear: right;
+}
+
+/* players list */
+#pl_headings {
+    float: left;
+    clear: left;
+    font-weight: 700;
+}
+#plh_name {
+    float: left;
+    margin-left: 125px;
+}
+#player_list {
+    float: left;
+    clear: left;
+    width: 90%;
+    margin-left: 5%;
+}
+#plh_citizenship {
+    float: left;
+    margin-left: 155px;
+}
+#plh_days {
+    float: left;
+    margin-left: 15px;
+}
+.user_image {
+    width: 100px;
+    height: 130px;
+    float: left;
+}
+.player_info {
+    float: left;
+    clear: left;
+    width: 100%;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.name {
+    float: left;
+    margin-left: 15px;
+    margin-top: 40px;
+    width: 250px;
+}
+.pi_flag {
+    width: 60px;
+    height: 30px;
+    float: left;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.days_in_game {
+    float: left;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.view {
+	float: right;
+    margin-top: 35px;
+}

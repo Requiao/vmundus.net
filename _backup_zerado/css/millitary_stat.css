@@ -1,0 +1,175 @@
+.battle_info_div {
+    position: relative;
+    width: 910px;
+    border-bottom: 2px solid rgb(101, 163, 195);
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.attacker_head {
+    float: left;
+    font-weight: bold;
+    width: 200px;
+    margin-left: 20px;
+}
+.region_name_head {
+    float:  left;
+    width: 470px;
+    text-align:  center;
+    font-weight: bold;
+}
+.defender_head {
+    float: right;
+    font-weight: bold;
+    width: 200px;
+    text-align: right;
+    margin-right: 20px;
+}
+.attacker_name {
+    float: left;
+    color: rgb(7, 130, 193);
+    margin-left: 20px;
+    width: 300px;
+}
+.battle_type {
+    float: left;
+    width: 270px;
+    text-align: center;
+}
+.defender_name {
+    float: right;
+    color: rgb(7, 130, 193);
+    margin-right: 20px;
+    width: 300px;
+    text-align: right;
+}
+.attacker_flag {
+    float:  left;
+    width: 100px;
+    height: 50px;
+    margin-left:  10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgb(87,87,87);
+	clear: left;
+}
+.region_name {
+    float: left;
+    color: rgb(7, 130, 193);
+    width: 690px;
+    text-align: center;
+}
+.defender_flag {
+    float: right;
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgb(87,87,87);
+}
+.battle_costs_head {
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.attacker_costs {
+    float: left;
+    margin-left: 20px;
+    color: #316884;
+}
+.defender_costs {
+    float: right;
+    margin-right: 20px;
+    color: #316884;
+}
+.damage_made_head {
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.attacker_damage {
+    float: left;
+    margin-left: 20px;
+    color: #843131;
+    clear: left;
+}
+.defender_damage {
+    float: right;
+    margin-right: 20px;
+    color: #843131;
+}
+.platform_head {
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+.attacker_strength {
+    float: left;
+    margin-left: 20px;
+    clear: left;
+}
+.defender_strength {
+    float: right;
+    margin-right: 20px;
+}
+.battle_started_head {
+    float: left;
+    clear: left;
+    font-weight: bold;
+    margin-left: 20px;
+	margin-top: 10px;
+}
+.battle_started_date {
+    float: left;
+    margin-left: 10px;
+	margin-top: 10px;
+}
+.battle_duration_head {
+    float: left;
+    clear: left;
+    font-weight: bold;
+    margin-left: 20px;
+	margin-top: 10px;
+}
+.battle_duration_time {
+    float: left;
+    margin-left: 10px;
+	margin-top: 10px;
+}
+.battle_ended_head {
+    float: left;
+    clear: left;
+    font-weight: bold;
+    margin-left: 20px;
+	margin-top: 10px;
+}
+.battle_ended_date {
+    float: left;
+    margin-left: 10px;
+	margin-top: 10px;
+}
+.winner_head {
+    float: left;
+    clear: left;
+    font-weight: bold;
+    margin-left: 20px;
+	margin-top: 10px;
+}
+.winner_name {
+    float: left;
+    margin-left: 10px;
+	margin-top: 10px;
+	color: rgb(7, 130, 193);
+}
+.battle_btn {
+    color: rgb(7, 130, 193);
+    float: right;
+    margin-right: 20px;
+    text-decoration: underline;
+    margin-top: 10px;
+}

@@ -1,0 +1,132 @@
+.scroll_style::-webkit-scrollbar {
+    width: 15px;
+}
+ 
+.scroll_style::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
+ 
+.scroll_style::-webkit-scrollbar-thumb {
+    background-color: rgb(84, 137, 180);
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+}
+
+#message_div {
+	float: left;
+	width: 100%;
+    max-height: 700px;
+    overflow: auto;
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom: 2px solid #5489b4;
+}
+#message_div a {
+	color: rgb(7, 130, 193);
+    text-decoration: underline;
+}
+
+.time a {
+	color: rgb(77, 77, 77)!important;
+	text-decoration: none !important;
+}
+.time {
+	font-size: 15px;
+    line-height: 100%;
+    margin-left: 10px;
+	margin-top: -20px;
+	clear: both;
+}
+.message_divs {
+	word-break: break-word;
+    padding: 5px;
+    min-width: 460px;
+	float: left;
+}
+.message_divs  img {
+	max-width: 550px;
+}
+.out_message_div {
+	position: relative;
+    width: 80%;
+    min-height: 95px;
+    border: 1px solid rgb(36, 121, 155);
+    float: right;
+    clear: both;
+	margin:5px;
+	margin-top: 20px;
+	border-radius: 3px;
+	font-size: 18px;
+	word-wrap: break-word;
+}
+.out_message_div .time {
+	float: right;
+}
+.out_message_div .user_image {
+    position: absolute;
+	right: 0;
+	top: 0;
+    height: 91px;
+    width: 70px;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.out_message_div .message_divs {
+    margin-right: 85px;
+}
+.in_message_div {
+	position: relative;
+    width: 80%;
+    min-height: 95px;
+    border: 1px solid rgb(162, 162, 162);
+    float: left;
+    clear: both;
+	margin:5px;
+	margin-top: 20px;
+	border-radius: 3px;
+	font-size: 18px;
+	word-wrap: break-word;
+}
+.in_message_div .time {
+	float: left;
+}
+.in_message_div .user_image {
+    position: absolute;
+    height: 91px;
+    width: 70px;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.in_message_div .message_divs {
+    margin-left: 85px;
+}
+
+#enter_message {
+	clear: both;
+    margin-left: auto;
+    border-radius: 5px;
+    margin-right: auto;
+    position: relative;
+}
+#msg_error {
+	color: rgb(208, 88, 80);
+    text-align: center;
+}
+#cke_message_input {
+    width: 82%;
+    float: left;
+    margin-left: 9%;
+    margin-bottom: 20px;
+}
+#send {
+	color: rgb(53,122,56);
+    cursor: pointer;
+    float: right;
+    margin-right: 5%;
+    margin-top: 420px;
+}

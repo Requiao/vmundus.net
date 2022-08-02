@@ -1,0 +1,88 @@
+footer {
+	height: 150px;
+	color: white;
+	background-image: url("../img/foot.png");
+    width: 100%;
+    float: left;
+	margin-top: 15px;
+	font-size: 20px;
+    font-family: Enriqueta;
+	position: relative;
+}
+footer a:visited {
+	color:white;
+}
+#allrr {
+	width: 40%;
+    text-align: center;
+    clear: both;
+    position: absolute;
+    left: 30%;
+    bottom: 0px;
+}
+#footer_elements {
+	float: left;
+    margin-left: 25%;
+    margin-top: 5px;
+	font-size: 18px;
+}
+
+#fe_col1 {
+    float: left;
+    width: 150px;
+}
+#fe_col1_privacy_lbl {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+	color: #c1c1c1;
+}
+#privacy_policy {
+    float: left;
+}
+#terms_of_service {
+	float: left;
+    clear: left;
+}
+
+#fe_col2 {
+    float: left;
+    width: 250px;
+	margin-left: 50px;
+}
+#fe_col2_contact_lbl {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+	color: #c1c1c1;
+}
+#fe_col2_email {
+    float: left;
+    clear: left;
+}
+
+#fe_col3 {
+    float: left;
+    width: 150px;
+    margin-left: 50px;
+}
+#fe_col2_about_lbl {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    color: #c1c1c1;
+}
+#fe_col3 a {
+    float: left;
+	clear: left;
+}
+
+#up {
+	display:none;
+	font-size: 25px;
+    color: #8197be;
+	position: fixed;
+    bottom: 25px;
+    right: 25px;
+	cursor:pointer;
+}

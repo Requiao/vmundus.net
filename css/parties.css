@@ -1,0 +1,102 @@
+.party_list_div {
+	border: 1px solid gray;
+    box-shadow: 0px 0px 3px 0px rgb(87,87,87);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clear: both;
+    float: left;
+    width: 98%;
+    margin-left: 1%;
+    padding-bottom: 10px;
+}
+.party_flag {
+	width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+.party_name {
+	float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.party_desc {
+	font-style: italic;
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 10px;
+    width: 96%;
+    clear: both;
+	overflow: hidden;
+}
+.party_leader {
+	position: absolute;
+    color: black;
+    top: 50px;
+    left: 220px;
+}
+.join_party, .cancel_application {
+	position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.details {
+	display: block;
+    position: absolute;
+    right: 150px;
+    top: 10px;
+}
+
+#cancel {
+	float: left;
+    margin-left: 75px;
+    margin-bottom: 10px;
+}
+
+/* reply */
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#msg {
+	font-family: Enriqueta;
+    font-size: 25px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 220px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#error {
+	font-size: 30px;
+    margin-top: 13px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}
+#reply_info span {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}

@@ -1,0 +1,52 @@
+.sd_stat_details {
+	float: left;
+    margin-left: 1%;
+    width: 98%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    height: 35px;
+    border-bottom: 2px solid #dfdfdf;
+    box-shadow: 0 2px 0 rgba(255,255,255,.9)
+}
+.sd_country_position {
+    float: left;
+    width: 50px;
+    color: rgb(7, 130, 193);
+    text-shadow: 2px 2px 5px rgb(17, 118, 170);
+    font-size: 35px;
+    line-height: 100%;
+    margin-top: -5px;
+}
+.sd_flag {
+    width: 40px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgb(87,87,87);
+}
+.sd_country_name {
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+	color: rgb(7, 130, 193);
+}
+.sd_amount {
+	font-family: 'Times New Roman';
+    float: left;
+    margin-left: 10px;
+    width: 220px;
+	color: rgb(64, 116, 142);
+	font-weight: 600;
+	margin-top: 5px;
+}
+.sd_amount span { 
+	color: rgb(159, 155, 155)!important;
+    float: initial;
+	font-weight: normal !important;
+}
+.sd_gold {
+    width: 35px !important;
+    margin-top: 5px;
+}

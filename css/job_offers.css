@@ -1,0 +1,451 @@
+/* skill */
+#skill {
+	float: left;
+    margin-left: 5px;
+    margin-top: 17px;
+    font-size: 25px;
+}
+#skill_input {
+	font-size: 30px;
+    height: 30px;
+    width: 80px;
+    margin-left: 5px;
+    margin-top: 17px;
+    float: left;
+    background-color: rgba(192, 223, 255, 0.74);
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+}
+#search_job {
+	margin-top: 11px;
+    margin-left: 10px;
+	float: left;
+}
+
+#my_offers {
+    float: left;
+    margin-left: 20px;
+    clear: left;
+    margin-top: 30px;
+    width: initial;
+}
+/* country list */
+#country_list {
+	height: 35px;
+    border: 1px solid rgb(163, 163, 163);
+    float: right;
+    width: 330px;
+    margin-left: 5px;
+	margin-right: 5px;
+    background-color: white;
+	cursor:pointer;
+	position:relative;
+	margin-top: 10px;
+}
+#country_list span {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+}
+#countries_div {
+	display:none;
+	overflow: auto;
+    height: 265px;
+    width: 330px;
+    right: 6px;
+    position: absolute;
+    top: 46px;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 3px solid rgb(163, 163, 163);
+	cursor:pointer;
+	z-index: 1;
+}
+.country {
+	width: 100%;
+    height: 45px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+#country {
+	width: 100%;
+    height: 35px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+.country:hover {
+	background-color: rgb(155, 155, 155);
+    color: white;
+}
+#country img {
+	width: 55px;
+	height: 35px;
+    float: left;
+	clear: left;
+}
+.country img {
+	width: 55px;
+    height: 35px;
+    float: left;
+    clear: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.country p, #country p {
+	float: left;
+    margin: 0;
+    margin-left: 5px;
+    font-family: Enriqueta;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+/* region list */
+#region_list {
+	height: 35px;
+    border: 1px solid rgb(163, 163, 163);
+    float: right;
+    width: 330px;
+    margin-left: 5px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+	margin-top: 10px;
+}
+#region_list span {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+}
+#regions_div {
+	display: none;
+    overflow: auto;
+    height: 265px;
+    width: 330px;
+    right: 342px;
+    position: absolute;
+    top: 46px;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 3px solid rgb(163, 163, 163);
+    cursor: pointer;
+	z-index: 1;
+}
+.region {
+	width: 100%;
+    height: 35px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+.region:hover {
+	background-color: rgba(69,156,72, 0.8);
+    color: white;
+}
+.region p {
+	float: left;
+    margin: 0;
+    margin-left: 5px;
+	font-family: Enriqueta;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+/* job offers */
+#job_offers_div {
+	float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+#company_name_head {
+	font-family: Amiri;
+    letter-spacing: 2px;
+    float: left;
+	margin-left: 110px;
+	font-weight: bold;
+}
+#location_head {
+	font-family: Amiri;
+    letter-spacing: 2px;
+    float: left;
+    margin-left: 50px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+}
+#skill_head {
+	font-family: Amiri;
+    letter-spacing: 2px;
+    float: left;
+	margin-left: 5px;
+	font-weight: bold;
+}
+#salary_head {
+	font-family: Amiri;
+    letter-spacing: 2px;
+    float: left;
+	margin-left: 75px;
+	font-weight: bold;
+}
+.job {
+	height: 140px;
+    clear: both;
+    margin-bottom: 10px;
+    border-top: 2px solid #2d445e;
+    position: relative;
+    width: 98%;
+    margin-left: 1%;
+}
+.employer_name {
+	color: rgb(7, 130, 193);
+    float: left;
+}
+.user_img {
+	float: left;
+    clear: left;
+    width: 85px;
+	height: 111px;
+    display: block;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.company_name {
+	position: absolute;
+    left: 100px;
+    top: 2px;
+}
+.company_img {
+	width: 200px;
+    height: 100px;
+    left: 100px;
+    top: 33px;
+    position: absolute;
+}
+.region_name {
+	position: absolute;
+    top: 57px;
+    left: 310px;
+    color: rgb(7, 130, 193);
+    width: 200px;
+    text-align: center;
+}
+.bonus {
+	position: absolute;
+    top: 57px;
+    left: 520px;
+    background-color: rgb(73, 137, 98);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+    width: 30px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+}
+.salary {
+	position: absolute;
+    top: 57px;
+    left: 590px;
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(47, 109, 179);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+    width: 170px;
+    text-align: center;
+}
+.apply {
+	position: absolute;
+    top: 57px;
+    right: 5px;
+}
+
+/* persons */
+#msg_heading {
+	width: 100%;
+    background-color: rgb(84, 137, 180);
+    color: white;
+	height: 30px;
+}
+#msg_location {
+	float: left;
+    margin-left: 5px;
+}
+#msg_skill {
+	float: left;
+    margin-left: 20px;
+}
+#msg_salary {
+	float: left;
+    margin-left: 20px;
+}
+.about_persons {
+	float: left;
+    box-shadow: 0px -1px 5px 2px #345879;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    min-width: 150px;
+}
+.person_name {
+	background-color: rgb(86, 124, 156);
+    color: white;
+    text-align: center;
+}
+.person_icon {
+	font-size: 50px !important;
+	margin-left: 5px !important;
+    margin-top: 5px !important;
+	float: left !important;
+	color: rgb(25, 32, 37) !important;
+    margin-right: 0 !important;	
+}
+.person_years {
+	background-color: #3966b0;
+    float: left;
+    border-radius: 16px;
+    min-width: 30px;
+    height: 27px;
+    color: white;
+    text-align: center;
+    line-height: 27px;
+    margin-top: 3px;
+    margin-left: 9px;
+    font-family: 'Space Mono', monospace;
+}
+.person_worked_stat {
+    position: absolute;
+    left: 103px;
+    top: 31px;
+    width: 45px;
+    line-height: 100%;
+    font-size: 30px;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    border-radius: 5px;
+}
+.person_worked {
+	color: rgb(0, 0, 0);
+}
+.person_can_work {
+	color: rgb(179, 47, 47);
+}
+.person_experience {
+	position: absolute;
+    left: 103px;
+    top: 58px;
+    background-color: #6c976d;
+    color: white;
+    border-radius: 8px;
+    width: 40px;
+    text-align: center;
+    padding-bottom: 2px;
+    height: 25px;
+    font-family: 'Space Mono', monospace;
+    line-height: 25px;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.person_status {
+	background-color: #345879;
+    float: left;
+    clear: both;
+    width: 100%;
+    color: white;
+    text-align: center;
+	margin-top: 5px;
+}
+
+.apply_btn {
+	width: 100%;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(33, 150, 243);
+	float:left;
+}
+.apply_btn:hover {
+	background-color: rgb(82, 132, 203);
+    color: white;
+}
+.apply_btn:active {
+	box-shadow: 0px 0px 20px 2px rgb(87,87,87);
+}
+
+/* bar */
+.bar {
+	width: 100%;
+    height: 25px;
+    background-color: rgb(227, 227, 227);
+    color: black;
+    text-align: center;
+    border-top: 1px solid #b7b6b6;
+    border-bottom: 1px solid #b7b6b6;
+    box-shadow: inset 0px 1px 3px 0px #888888;
+    float: left;
+    clear: both;
+    margin-top: 10px;
+}
+.progress {
+    background-color: rgb(128, 182, 109);
+    height: 25px;
+}
+.bar p {
+	margin-top: -28px;
+}
+
+/* reply */
+#reply_info {
+	width: 870px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px #345879;
+    font-family: Enriqueta;
+    font-size: 20px;
+    position: relative;
+    overflow: auto;
+    max-height: 500px;
+}
+#msg {
+	font-family: Enriqueta;
+    font-size: 20px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#msg a {
+	color: rgb(7, 130, 193) !important;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 380px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#span_ok {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}	
+#error {
+	font-size: 30px;
+    margin-top: 8px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}
+#cancel {
+	float: left;
+    margin-left: 50px;
+	margin-top: 5px;
+    margin-bottom: 10px;
+}

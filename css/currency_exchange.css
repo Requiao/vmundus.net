@@ -1,0 +1,423 @@
+#currency_exchange_controls {
+    width: 100%;
+    float: left;
+    border-top: 1px solid rgb(184, 215, 226);
+    border-bottom: 1px solid rgb(184, 215, 226);
+    height: 45px;
+    background-image: linear-gradient(#f6f6f6 0,#d1dfe6 100%);
+    position: relative;
+}
+#buy_currency_h {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #3b75b8;
+    font-weight: bold;
+}
+#buying_item {
+    float: left;
+	margin-left: 10px;
+	position: relative;
+}
+.gold_img {
+    width: 40px;
+    margin-top: 10px;
+}
+#switch_buying_items {
+    border: 1px solid #c4e6f2;
+    float: left;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #0782c1;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #edfaff;
+    padding: 0 15px;
+    box-shadow: 0 1px white;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#sell_currency_h {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #3b75b8;
+    font-weight: bold;
+}
+#selling_item {
+    float: left;
+    margin-left: 10px;
+	position: relative;
+}
+#currency_list {
+    margin-top: 5px;
+	height: 35px;
+    border: 1px solid rgb(163, 163, 163);
+    float: left;
+    width: 335px;
+    background-color: white;
+	cursor:pointer;
+	position:relative;
+	border-radius: 3px
+}
+#currency_div {
+    left: 1px;
+    top: 41px;
+}
+
+/* make offer */
+#make_offer_div {
+    float: left;
+    width: 100%;
+	display: none;
+	box-shadow: 0 2px 0 rgb(228, 235, 239);
+    padding-bottom: 5px;
+}
+#make_offer_btn {
+	border: 1px solid #c4e6f2;
+    float: right;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #0782c1;
+    font-weight: bold;
+    margin-top: 5px;
+    background-color: #edfaff;
+    padding: 0 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0px #0782c1;
+}
+#make_offer_btn:active {
+	box-shadow:none;
+}
+#offer_currency_h {
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+	color: rgb(159, 96, 96);
+}
+#offering_item {
+    float: left;
+    margin-left: 10px;
+	position: relative;
+}
+#offering_amount {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    box-shadow: inset 0 0 1px #68a8c9;
+}
+#offer_currency_list {
+    margin-top: 5px;
+	height: 35px;
+    border: 1px solid rgb(163, 163, 163);
+    float: left;
+    width: 335px;
+    background-color: white;
+	cursor:pointer;
+	position:relative;
+	border-radius: 3px
+}
+#offer_currency_div {
+    left: 1px;
+    top: 41px;
+}
+#switch_offering_items {
+    border: 1px solid #c4e6f2;
+    float: left;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #0782c1;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #edfaff;
+    padding: 0 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px white;
+}
+#offer_for_currency_h {
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(159, 96, 96);
+}
+#offer_for_item {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+#offering_rate {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    box-shadow: inset 0 0 1px #68a8c9;
+}
+#place_offer_btn {
+    border: 1px solid #ae6767;
+    float: left;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #bb6e6e;
+    font-weight: bold;
+    margin-top: 7px;
+    background-color: #ffe9e9;
+    padding: 0 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0px #995b5b;
+}
+#place_offer_btn:active {
+	box-shadow: none;
+}
+
+/* currency list */
+#error_offers {
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #c33232;
+}
+#currency_list span,
+#offer_currency_list span {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+}
+#currency_div,
+#offer_currency_div {
+	display:none;
+	overflow: auto;
+    height: 265px;
+    width: 335px;
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 3px solid rgb(163, 163, 163);
+	cursor:pointer;
+	z-index: 1;
+}
+#selected_currency,
+#offer_selected_currency {
+	width: 100%;
+    height: 35px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+	border-radius: 3px;
+    box-shadow: inset 0 0 1px 0px #67a6c6;
+}
+#selected_currency img,
+ #offer_selected_currency img {
+	width: 55px;
+	height: 35px;
+    float: left;
+	clear: left;
+}
+.currency, .offer_currency {
+	width: 100%;
+    height: 45px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+.currency:hover,
+.offer_currency:hover {
+	background-color:rgba(155, 155, 155, 1);
+    color: white;
+}
+.currency img,
+.offer_currency img {
+	width: 55px;
+	height: 35px;
+    float: left;
+	clear: left;
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+.currency p, #selected_currency p,
+.offer_currency p, #offer_selected_currency p {
+	float: left;
+    margin: 0;
+    margin-left: 5px;
+	font-family: Enriqueta;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+/* offers */
+#user_offers {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+#user_offers_head {
+    float: left;
+    width: 100%;
+    background-color: rgb(199, 116, 116);
+    box-shadow: inset 0px 0px 9px 3px rgb(141, 87, 87);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#other_offers_head {
+    float: left;
+    width: 100%;
+    background-color: rgb(116, 161, 199);
+    box-shadow: inset 0px 0px 9px 3px rgb(87, 116, 141);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#currency_offers {
+	float: left;
+    margin-top: 10px;
+	width: 100%;
+}
+#amount_head {
+	float: left;
+    margin-left: 145px;
+}
+#price_head {
+	float: left;
+    margin-left: 115px;
+}
+.offer {
+	height: 150px;
+    clear: both;
+    margin-bottom: 10px;
+    border-top: 2px solid #2d445e;
+    position: relative;
+    width: 98%;
+    margin-left: 1%;
+}
+.user_name {
+	float: left;
+    color: rgb(7, 130, 193);
+    font-weight: bold;
+}
+.user_image {
+	float: left;
+    clear: left;
+    width: 70px;
+    height: 91px;
+    display: block;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.offered_by {
+    position: absolute;
+    top: 123px;
+    font-size: 17px;
+}
+.amount_selling {
+	float: left;
+    font-family: 'Space Mono', monospace;
+    color: rgb(47, 109, 179);
+    width: 165px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.rate {
+	float: left;
+    font-family: 'Space Mono', monospace;
+    color: rgb(222, 77, 77);
+    width: 175px;
+    margin-top: 30px;
+	margin-left: 10px;
+}
+.gold_rate {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    color: rgb(222, 77, 77);
+    margin-top: 30px;
+	margin-left: 10px;
+}
+.offer .gold_img {
+	float: left;
+    margin-top: 30px !important;
+    margin-left: 5px;
+}
+.amount_input {
+	position: absolute;
+    left: 510px;
+    font-family: 'Space Mono', monospace;
+    width: 100px;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    color: rgb(51, 51, 51);
+    box-shadow: inset 0 0 1px #68a8c9;
+    font-size: 25px;
+    top: 50px;
+    text-align: center;
+}
+.buy, .buy_for_country, .remove_offer, .buy_for_corp {
+	margin-right: 10px;
+    margin-top: 25px;
+    float: right;
+}
+
+/* reply */
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#msg {
+	font-family: Enriqueta;
+    font-size: 20px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 220px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#reply_info span {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+#error {
+	font-size: 30px;
+    margin-top: 8px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}

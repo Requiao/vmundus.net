@@ -1,0 +1,788 @@
+#page_menu {
+    width: 100%;
+    height: 35px;
+    float: left;
+    background-color: rgb(241, 241, 241);
+    margin-top: 0px;
+    box-shadow: 0px 0px 2px rgb(87,87,87);
+}
+#page_menu p {
+	float: left;
+    width: 33.33333%;
+    height: 34px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.div_head {
+    font-size: 22px;
+    text-align: center;
+    background-color: rgb(85, 135, 160);
+    box-shadow: inset 0px 0px 25px 0px rgb(52, 79, 90);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white;
+    width: 100%;
+}
+
+/* bank manager */
+#manager_div {
+	width: 400px;
+    float: left;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    position: relative;
+    height: 180px;
+}
+#cgd_name {
+	text-align: center;
+    font-size: 25px;
+    color: rgb(7, 130, 193);
+    float: left;
+    margin-left: 5px;
+}
+#position_name {
+	font-size: 20px;
+    text-align: center;
+    display: block;
+    float: left;
+    width: 295px;
+    font-weight: bold;
+}
+#manager_image {
+	float: left;
+    height: 130px;
+    width: 100px;
+    clear: left;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+#manager_info_class {
+	float: left;
+    width: 280px;
+	margin-left: 10px;
+}
+.manager_info {
+	margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgb(193, 193, 193);
+}
+#elected_since span {
+	float: right;
+}
+#elected_until_day span {
+	float: right;
+}
+#manager_salary span{
+	float: right;
+	font-family: 'Space Mono', monospace;
+}
+
+/* invest */
+#invest_into_bank_div {
+    width: 400px;
+    float: left;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    margin-top: 55px;
+    position: relative;
+}
+#invest_gold_amount {
+    position:  absolute;
+    left: 10px;
+    top: 25px;
+    width: 145px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+}
+#invest_gold_lbl {
+    position:  absolute;
+    left: 10px;
+}
+#invest_gold {
+    position:  absolute;
+    left: 175px;
+    top: 25px;
+}
+#invest_currency_lbl {
+    position: absolute;
+    left: 10px;
+    top: 80px;
+}
+#invest_currency_amount {
+    position: absolute;
+    left: 10px;
+    top: 110px;
+    width: 145px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+}
+#invest_currency {
+    position: absolute;
+    left: 175px;
+    top: 110px;
+}
+
+/* manage bank */
+#manage_bank {
+    float: left;
+    width: 99%;
+    margin-left: 0.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.mb_divs {
+    float: left;
+    margin-left: 35px;
+}
+.mbd_lbl {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.mbd_input {
+    float: left;
+    clear: left;
+    width: 210px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    margin-left: 10px;
+}
+.set_rule {
+    float: left;
+    margin-left: 20px;
+    margin-top: -2px;
+}
+
+/* bank treasury */
+#bank_treasury {
+    float: left;
+    clear: left;
+    width: 590px;
+    margin-left: 5%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.bank_currency {
+    float: left;
+}
+.currency_amount {
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    float: left;
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(47, 109, 179);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgb(87,87,87);
+    width: 250px;
+    text-align: center;
+}
+.return_amount {
+    float: left;
+    width: 145px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+.return_to_country {
+    float: left;
+    margin-left: 25px;
+    margin-top: 8px;
+}
+
+/* credit/debosit info */
+#credit_deposit_info_div {
+    float: left;
+    clear: left;
+	margin-left: 5%;
+	margin-top: 25px;
+}
+.cdidh_type {
+    float:  left;
+    font-weight: bold;
+    width: 75px;
+    text-align: center;
+}
+.cdidh_rate {
+    float: left;
+    font-weight: bold;
+    width: 75px;
+    text-align: center;
+}
+.cdidh_limit {
+    float: left;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+}
+.cdidh_days {
+    float: left;
+    font-weight: bold;
+    width: 75px;
+    text-align: center;
+}
+.cdid_headings {
+    float:  left;
+    width: 100%;
+}
+.cdid_info_div {
+    float:  left;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 345px;
+}
+.cdid_info_div:nth-child(2) {
+	margin-left:50px;
+}
+.cdid_details {
+    float:  left;
+    width:  100%;
+    border-bottom: 1px solid black;
+    padding-bottom:  2px;
+	margin-top: 5px;
+}
+.cdid_type_name {
+    float:  left;
+    width: 75px;
+    text-align:  center;
+	font-family: monospace;
+}
+.cdid_rate {
+    float: left;
+    width: 75px;
+    text-align: center;
+	font-family: monospace;
+}
+.cdid_limit {
+    float: left;
+    width: 120px;
+    text-align: center;
+	font-family: monospace;
+	color: #2456a4;
+}
+.cdid_days {
+    float: left;
+    width: 75px;
+    text-align: center;
+	font-family: monospace;
+}
+.credit_rate {
+	color: rgb(180, 50, 50);
+}
+.debosit_rate {
+	color: rgb(42, 108, 42);
+}
+
+/* Deposit */
+#deposit_div {
+    float: left;
+    clear: left;
+    width: 100%;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	display: none;
+}
+
+/* make credit deposit */
+.credit_deposit_divs {
+	float: left;
+    clear: left;
+    width: 90%;
+	margin-top: 20px;
+    margin-bottom: 20px;
+	margin-left: 5%;
+}
+.make_credit_deposit_div {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+	width: 450px;
+}
+.mdd_head {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.mdd_type {
+    float: left;
+    width: 50px;
+    text-align: center;
+    margin-top: 5px;
+}
+.amount_input {
+    float: left;
+    width: 145px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 10px;
+    text-align: center;
+}
+.days_input {
+    float: left;
+    width: 99px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 10px;
+    text-align: center;
+}
+.deposit_submit, .credit_submit {
+    float: left;
+	margin-left: 10px;
+}
+
+/* user deposits */
+#user_deposits_div,  #all_deposits_div {
+    float:  left;
+    width: 800px;
+    margin-left: 5%;
+	margin-top: 25px;
+}
+.udd_deposits, .udd_heads {
+    float: left;
+    width: 800px;
+    border-bottom:  1px solid gray;
+    margin-top:  10px;
+    margin-bottom:  5px;
+}
+.udd_heads p {
+	font-weight: bold;
+}
+.uddh_user {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+.uddh_rate {
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+.uddh_amount {
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+}
+.uddh_earned {
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+}
+.uddh_days {
+    float: left;
+    width: 99px;
+    text-align: center;
+    margin-left: 10px;
+}
+.uddh_days_left {
+    float: left;
+    width: 100px;
+    text-align: center;
+    margin-left: 10px;
+}
+.uddd_user_name {
+    float: left;
+    color: rgb(7, 130, 193);
+}
+.uddd_image {
+    height: 70px;
+    width: 54px;
+    float: left;
+    clear: left;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.uddd_amount {
+    float:  left;
+    font-family: 'Space Mono', monospace;
+    width: 150px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.uddd_rate {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    color: rgb(73, 153, 76);
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+	margin-top: 15px;
+}
+.uddd_earned {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    color: rgb(47, 109, 196);
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+	margin-top: 15px;
+}
+.uddd_days {
+    float: left;
+    width: 100px;
+    margin-left: 10px;
+    font-family: 'Space Mono', monospace;
+    text-align:  center;
+    color: rgb(57, 83, 112);
+	margin-top: 15px;
+}
+.uddd_days_left {
+    float: left;
+    width: 100px;
+    margin-left: 10px;
+    font-family: 'Space Mono', monospace;
+    text-align:  center;
+    color: rgb(179, 47, 47);
+	margin-top: 15px;
+}
+
+/* credit div */
+#credit_div {
+	float: left;
+    clear: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+/* user credits */
+#user_credits_div,  #all_credits_div {
+    float: left;
+    width: 865px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+.ucd_credits, .udd_heads {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.ucd_heads p {
+	font-weight: bold;
+}
+.ucdh_user {
+    float: left;
+    width: 90px;
+    text-align: center;
+}
+.ucdh_amount {
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+.ucdh_rate {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+.ucdh_fee {
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+}
+.ucdh_days_left {
+    float: left;
+    width: 100px;
+    text-align: center;
+    margin-left: 10px;
+}
+.ucdh_left_to_return {
+    float: left;
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+}
+.ucdc_user_name {
+    float: left;
+    color: rgb(7, 130, 193);
+}
+.ucdc_image {
+    height: 70px;
+    width: 54px;
+    float: left;
+    clear: left;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.ucdc_amount {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    width: 150px;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.ucdc_rate {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    color: rgb(179, 47, 47);
+    width: 100px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.ucdc_fee {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    color: rgb(47, 109, 196);
+    width: 150px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+.ucdc_days_left {
+    float: left;
+    width: 100px;
+    margin-left: 10px;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    color: rgb(73, 153, 76);
+    margin-top: 15px;
+}
+.ucdc_left_to_return {
+    float: left;
+    width: 150px;
+    margin-left: 10px;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    color: rgb(179, 47, 47);
+    margin-top: 15px;
+}
+.ucdc_amount_input {
+    float: left;
+    width: 145px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 510px;
+    margin-top: 20px;
+    text-align: center;
+}
+.return_credit {
+    float: left;
+    margin-left: 25px;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+/* exchange div */
+#exchange_div {
+    float: left;
+    position: relative;
+    clear: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	display: none;
+}
+.buy_currency_block {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+	width: 99%;
+    margin-left: 0.5%;
+}
+#bcb_heads p {
+	float: left;
+    font-weight: bold;
+    width: 120px;
+    text-align: center;
+}
+#bcbh_currency {
+    margin-left: 100px;
+}
+#bcbh_price {
+    margin-left: 130px;
+}
+#bcbh_limit {
+    margin-left: 10px;
+}
+#bcbh_amount {
+    margin-left: 40px;
+}
+#currency_price {
+    float: left;
+    width: 135px;
+    text-align: center;
+    margin-top: 15px;
+}
+#buy_limit {
+    float: left;
+    width: 135px;
+    text-align: center;
+    margin-top: 15px;
+}
+#buy_currency_amount {
+    float: left;
+    width: 145px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#buy_currency, .sell_currency {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#buy_currency_list {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    clear: left;
+    height: 35px;
+    border: 1px solid rgb(163, 163, 163);
+    float: left;
+    width: 335px;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+#buy_currency_list span {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+}
+#buy_currency_div {
+	display:none;
+	overflow: auto;
+    height: 265px;
+    width: 335px;
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 3px solid rgb(163, 163, 163);
+	cursor:pointer;
+	z-index: 1;
+}
+#buy_currency_div {
+    left: 10px;
+    top: 123px;
+}
+#buy_selected_currency {
+	width: 100%;
+    height: 35px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+#buy_selected_currency img {
+	width: 55px;
+	height: 35px;
+    float: left;
+	clear: left;
+}
+.buy_currency {
+	width: 100%;
+    height: 45px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+.buy_currency:hover {
+	background-color:rgba(155, 155, 155, 1);
+    color: white;
+}
+.buy_currency img {
+	width: 55px;
+	height: 35px;
+    float: left;
+	clear: left;
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+.buy_currency p {
+	float: left;
+    margin: 0;
+    margin-left: 5px;
+	font-family: Enriqueta;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+/* sell currency */
+.bcb_info {
+    float: left;
+}
+.bcbi_img {
+    width: 70px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 5px;
+    float: left;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px rgb(87,87,87);
+}
+
+/* reply */
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#msg {
+	font-family: Enriqueta;
+    font-size: 20px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 220px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#error {
+	font-size: 30px;
+    margin-top: 8px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}
+#reply_info span {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}

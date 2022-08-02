@@ -1,0 +1,839 @@
+.top_secret {
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 25px;
+    color: #d94343;
+    border-radius: 5px;
+    margin: 5px;
+    border: 3px solid #d94343;
+    font-weight: bold;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+/* head */
+#page_menu {
+    width: 100%;
+    height: 35px;
+    float: left;
+    background-color: rgb(241, 241, 241);
+    margin-top: 0px;
+    box-shadow: 0px 0px 2px rgb(87,87,87);
+}
+#page_menu p {
+	float: left;
+    width: 25%;
+    height: 34px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* country name/flag */
+#country_name_flag {
+	position: relative;
+    height: 120px;
+    float: left;
+    width: 100%;
+}
+#country_flag {
+	width: 140px;
+    height: 70px;
+	position: absolute;
+    left: 10px;
+    top: 25px;
+	border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgb(87,87,87);
+}
+#country_name {
+	position: absolute;
+    left: 170px;
+    top: 35px;
+    font-size: 35px;
+	color: rgb(35, 81, 105);
+}
+
+/* countries list */
+#country_list {
+	height: 35px;
+    border: 1px solid rgb(163, 163, 163);
+    float: right;
+    width: 330px;
+    margin-left: 5px;
+	margin-right: 5px;
+    background-color: white;
+	cursor:pointer;
+	position:relative;
+	margin-top: 10px;
+}
+#country_list span {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+}
+#countries_div {
+	display:none;
+	overflow: auto;
+    height: 265px;
+    width: 330px;
+    right: 6px;
+    position: absolute;
+    top: 46px;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 3px solid rgb(163, 163, 163);
+	cursor:pointer;
+	z-index: 1;
+}
+.country {
+	width: 100%;
+    height: 45px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+#country {
+	width: 100%;
+    height: 35px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+.country:hover {
+	background-color:rgb(155, 155, 155);
+    color: white;
+}
+.country img {
+	width: 55px;
+    height: 35px;
+    float: left;
+    clear: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#country img {
+	width: 55px;
+    height: 35px;
+    float: left;
+    clear: left;
+}
+.country p, #country p {
+	float: left;
+    margin: 0;
+    margin-left: 5px;
+    font-family: Enriqueta;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+/* country blocks style */
+#country_info_block {
+	display:none;
+	float: left;
+}
+.shi_details {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(131, 131, 131);
+}
+.shid_col1 {
+    float: left;
+    width: 50%;
+}
+.shid_col2 {
+    float: left;
+    width: 50%;
+}
+.mini_flag {
+	width: 70px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 5px;
+    float: left;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px rgb(87,87,87);
+}
+
+/* sub divs */
+.info_blocks {
+	position: relative;
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 10px;
+	width: 96%;
+	margin-left: 2%;
+	border-bottom: 1px solid rgb(131, 131, 131);
+}
+.info_blocks a {
+	color:rgb(7, 130, 193);
+}
+.info_blocks_no_border {
+	border-bottom: none;
+}
+.country_margin_flag {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+/* chart */
+.difth {
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.country_stat_div rect:hover  {
+	stroke-width: 2;
+    stroke: rgb(52, 75, 97);
+}
+
+/* country currency */
+.country_currency_divs {
+	float: left;
+    clear: left;
+    margin-bottom: 10px;
+    margin-top: 5px;
+	margin-left: 10px;
+}
+.country_currency_divs p {
+	margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    float: left;
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(47, 109, 179);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgb(87,87,87);
+    width: 250px;
+    text-align: center;
+}
+
+/* country resources */
+.country_resources_amount {
+	font-size: 19px !important;
+}
+#invest_gold_div {
+    float: left;
+    clear: left;
+}
+#invest_gold_amount, #invest_gov_gold_amount {
+	float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 145px;
+    height: 35px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    text-align: center;
+	clear: left;
+}
+#invest_gold_btn, #invest_gov_gold_btn {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: #575252;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* country_regions_block */
+#country_regions_block {
+	display:none;
+}
+.cr_region_name {
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(85, 135, 160);
+    box-shadow: inset 0px 0px 25px 0px rgb(52, 79, 90);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white !important;
+    width: 100%;
+}
+.under_attack {
+	width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(204, 74, 74);
+}
+.cr_region_name i {
+	font-size: 20px;
+    margin-left: 5px;
+}
+.cr_info_div {
+    position: relative;
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 96%;
+    margin-left: 2%;
+}
+#position_bar_div {
+    float: left;
+    clear: left;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgb(183, 182, 182);
+    background-color: rgb(227, 227, 227);
+    box-shadow: inset 0px 0px 3px 0px #888888;
+	width: 298px;
+}
+#position_progress {
+	background: repeating-linear-gradient( 
+		45deg, 
+		rgb(76, 131, 181), 
+		rgb(76, 131, 181) 10px, 
+		rgb(51, 90, 125) 10px, 
+		rgb(51, 90, 125) 20px 
+	);
+	height: 30px;
+}
+#position_bar_div p {
+	margin-top: -30px;
+    color: white;
+}
+#position_info {
+	float: left;
+    width: 300px;
+    text-align: center;
+	color: black;
+	clear: left;
+}
+.region_avg_prod_taxes, .region_def_system {
+    width: 48% !important;
+    margin-left: 2% !important;
+}
+.crb_coastal_region {
+	float: left;
+    clear: left;
+	margin-left: 25px;
+    margin-bottom: 10px;
+}
+.crb_coastal_region p {
+	float: left;
+    color: #1e495b;
+    font-weight: bold;
+	margin-left: 25px;
+}
+.crb_coastal_region img {
+	float: left;
+    width: 65px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 0px rgb(87,87,87);
+}
+
+.cr_region_road {
+	float: left;
+	clear: left;
+    box-shadow: 0px 0px 3px 1px #345879;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+	width: 300px;
+}
+.cr_region_road .crrr_head {
+	background-color: rgb(85, 135, 160);
+    box-shadow: inset 0px 0px 25px 0px rgb(52, 79, 90);
+    color: white;
+    text-align: center;
+}
+.cr_region_road img {
+	float: left;
+	background: radial-gradient(circle, #ffffff, #ebf1f875, #61abff75);
+	width: 300px;
+}
+.crrr_durability_div {
+    float: left;
+    width: 100%;
+}
+.crrr_durability_div .progress {
+    height: 25px;
+}
+.crrr_durability_div p {
+	margin-top: -28px;
+    text-align: center;
+}
+.crrr_durability_div .orange {
+	background-color: rgb(223, 163, 58);
+}
+.crrr_durability_div .green {
+	background-color: rgb(128, 182, 109);
+}
+.crrr_durability_div .red {
+	background-color: rgb(246, 120, 74);
+}
+.cr_region_road .crrr_level {
+	float: left;
+    clear: left;
+    background-color: #345879;
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.crrr_bonus {
+    float: left;
+    clear: left;
+    background-color: #345879;
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+/* country_government_block */
+#country_government_block {
+	display:none;
+}
+.country_government_div {
+	width: 400px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    position: relative;
+    height: 220px;
+}
+.cgd_name {
+	text-align: center;
+    font-size: 25px;
+    color: rgb(7, 130, 193);
+    float: left;
+    margin-left: 5px;
+}
+.position_name {
+	font-size: 20px;
+    text-align: center;
+    display: block;
+    float: left;
+    width: 295px;
+    font-weight: bold;
+}
+.governor_image {
+	float: left;
+    height: 130px;
+    width: 100px;
+    clear: left;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.governor_info_class {
+	float: left;
+    width: 280px;
+	margin-left: 10px;
+}
+.governor_info {
+	margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgb(193, 193, 193);
+}
+.elected_since span {
+	float: right;
+}
+.elected_until_day span {
+	float: right;
+}
+.governor_salary span{
+	float: right;
+	font-family: 'Space Mono', monospace;
+}
+.cgd_party {
+	color: rgb(93, 117, 141);
+	float: right;
+}
+#congress_heading {
+	width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(70, 104, 136);
+    color: white;
+}
+
+/* politics_info_block */
+#politics_info_block {
+	display:none;
+}
+.cz_app_info {
+    float: left;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #32596f;
+    position: relative;
+}
+.cz_app_info img {
+	height: 70px;
+    width: 54px;
+    float: left;
+    clear: left;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.cz_app_info a {
+	color: rgb(7, 130, 193);
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 150px;
+}
+.accept_cz {
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.decline_cz {
+    float: right;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+#law_history, #cz_requests {
+    float: right;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    color: #575252;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#law_history_div {
+    width: 935px;
+    height: 500px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding-top: 45px;
+    position: relative;
+    overflow: auto;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+	font-family: Enriqueta;
+    font-size: 20px;
+}
+#law_history_div_head {
+    position: fixed;
+    background-color: rgb(84, 137, 180);
+    box-shadow: inset 0px 0px 9px 3px rgb(68, 107, 139);
+    border-bottom: 1px solid black;
+    width: 920px;
+    height: 35px;
+    margin-top: -45px;
+    z-index: 1;
+    color: white;
+}
+#law_history_div_close {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: rgb(244,57,64);
+    font-size: 25px;
+}
+#n_heading {
+    float: left;
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+}
+
+.pli_description {
+	float: left;
+    clear: left;
+    margin-left: 5px;
+	width: 620px;
+	border-left: 5px solid #5d7f9f;
+    background-color: rgba(93, 127, 159, 0.2);
+    margin-bottom: 5px;
+	padding-left: 5px;
+	margin-top: 10px;
+}
+.pli_description img {
+	max-width: 550px;
+}
+.welcome_msg {
+    float: left;
+}
+.pli_proposed_by {
+	float: left;
+    clear: left;
+    margin-left: 5px;
+	border-left: 5px solid #f6665c;
+    background-color: rgba(246, 102, 92, 0.2);
+    margin-bottom: 5px;
+	padding-left: 5px;
+}
+.pli_proposed_on {
+	float: left;
+    clear: left;
+	margin-left: 5px;
+	border-left: 5px solid #4eb370;
+    background-color: rgba(78, 179, 112, 0.2);
+    margin-bottom: 5px;
+	padding-left: 5px;
+}
+.pli_expires_in {
+	font-family: 'Space Mono', monospace;
+    font-size: 25px;
+    float: right;
+    margin-top: -70px;
+    margin-bottom: 70px;
+    margin-right: 90px;
+}
+.pli_no {
+	border: 2px solid rgb(246, 102, 92);
+    float: right;
+    margin-right: 20px;
+    margin-top: -55px;
+    margin-bottom: 10px;
+}
+.pli_times span {
+	font-size: 50px;
+    padding: 10px;
+    margin: 0;
+    width: 60px;
+    text-align: center;
+    color: rgb(246, 102, 92);
+}
+.pli_no_voted {
+	background-color: rgb(246, 102, 92);
+    color: white;
+	text-align:center;
+	float: left;
+    width: 100%;
+}
+.pli_yes {
+	border: 2px solid rgb(78, 179, 112);
+    float: right;
+    margin-right: 55px;
+    margin-top: -55px;
+    margin-bottom: 10px;
+	clear: right;
+}
+.pli_check span {
+	font-size: 50px;
+    padding: 10px;
+    margin: 0;
+    width: 60px;
+    text-align: center;
+    color: rgb(78, 179, 112);
+}
+.pli_yes_voted {
+	background-color: rgb(78, 179, 112);
+    color: white;
+	text-align:center;
+	float: left;
+    width: 100%;
+	clear: right;
+}
+
+.pli_gray {
+	border: 2px solid rgb(140, 140, 140) !important;
+}
+.pli_gray_sign span {
+    color: rgb(140, 140, 140) !important;
+}
+.pli_gray_voted {
+	background-color: rgb(140, 140, 140) !important;
+}
+
+#new_union_color {
+	background-color: rgb(70,104,136);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+}
+
+.country_wars {
+	float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.tax_color {
+	color: #ad2424;
+}
+.pst_product_name {
+    float: left;
+    clear: both;
+    width: 100%;
+    height: 30px;
+    color: #ffffff;
+    text-align: center;
+    display: block;
+    background-color: #377da2;
+}
+.pst_tax {
+    float: left;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+}
+.pit_product_icon {
+    height: 80px;
+    width: 110px;
+    float: left;
+}
+.pit_product_name {
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    width: 180px;
+}
+.import_from_country_flag {
+    margin-top: 25px !important;
+}
+.pit_country_name {
+    float: left;
+    margin-left: 20px;
+    margin-top: 25px;
+    width: 250px;
+}
+.pit_tax {
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    width: 80px;
+}
+.pit_days {
+    float: left;
+    margin-left: 10px;
+    margin-top: 25px;
+    width: 210px;
+}
+.building_icon {
+    width: 200px;
+    height: 100px;
+    margin: 5px 0 5px 5px;
+    float: left;
+}
+.cbp_building_name {
+    float: left;
+    margin-left: 25px;
+    margin-top: 40px;
+    width: 230px;
+}
+.cbp_price {
+    float: left;
+    margin-left: 25px;
+    margin-top: 40px;
+    width: 250px;
+}
+.cbp_price p {
+	float: left;
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: rgb(64, 116, 142);
+}
+.cbp_price img {
+	box-shadow: none;
+    border-radius: 0px;
+    height: auto;
+    width: 35px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.foreigners_from_country_flag {
+    margin-top: 35px;
+}
+.fcbp_country_name {
+    float: left;
+    margin-left: 10px;
+    margin-top: 35px;
+    width: 220px;
+}
+.fcbp_price {
+    float: left;
+    margin-left: 5px;
+    width: 100px;
+    margin-top: 35px;
+}
+.fcbp_price p {
+	float: left;
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: rgb(64, 116, 142);
+}
+.fcbp_price img {
+	box-shadow: none;
+    border-radius: 0px;
+    height: auto;
+    width: 35px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.ta_country_name {
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 250px;
+}
+.ta_days {
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 210px;
+}
+
+/* reply */
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#msg {
+	font-family: Enriqueta;
+    font-size: 20px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 220px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#error {
+	font-size: 30px;
+    margin-top: 8px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}
+#reply_info span {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}

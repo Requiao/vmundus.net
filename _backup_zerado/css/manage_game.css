@@ -1,0 +1,682 @@
+table {
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid black;
+}
+table a {
+	color: rgb(70, 70, 70);
+}
+/* menu */
+#mg_menu p {
+    cursor: pointer;
+    border: 1px solid gray;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+#mg_menu {
+    width: 251px;
+}
+.mg_input {
+    width: 180px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+}
+
+/* ban user */
+#ban_user_div {
+    width: 100%;
+	margin-top: 15px;
+	display:none;
+}
+#bud_search_div {
+    width: 100%;
+    float: left;
+}
+#bud_user_id {
+    float: left;
+    width: 155px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+}
+#bud_find_user {
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 7px;
+}
+#bud_profile_details_div {
+    float: left;
+    width: 100%;
+	margin-top: 15px;
+}
+#bud_user_info {
+    float: left;
+	width: 110px;
+}
+#bud_user_info a {
+	float: left;
+    color: black;
+}
+#bud_user_info img {
+	width: 108px;
+    height: 140px;
+    float: left;
+    clear: left;
+}
+.budubh_ban_info {
+    float: left;
+	width: 100%;
+}
+#bud_user_ban_history {
+    float: left;
+    width: 450px;
+    margin-left: 10px;
+}
+.budubh_ban_name {
+    width: 100%;
+    text-align: center;
+    background-color: #5d87b8;
+    color: white;
+}
+.budubh_description {
+    border-left: 5px solid gray;
+    margin-top: 5px;
+}
+.budubh_extra_description {
+    border-left: 5px solid #f69191;
+    margin-top: 5px;
+}
+.budubh_moderator_name {
+    float: left;
+	color:#757575;
+}
+.budubh_ban_date {
+    float: right;
+}
+.budubh_ban_time {
+    float: right;
+    margin-right: 15px;
+}
+.budubh_points {
+    float: left;
+    clear: left;
+}
+
+#bud_ban_info {
+    float: left;
+    width: 320px;
+    margin-left: 15px;
+}
+#budubh_ban_select {
+    width: 100%;
+    font-size: 20px;
+    font-family: Enriqueta;
+    box-shadow: inset 0px 1px 2px rgb(35, 97, 158);
+}
+#budbi_description {
+    border-left: 5px solid gray;
+    margin-top: 5px;
+}
+#budbi_extra_description {
+    width: 100%;
+    height: 200px;
+}
+#budbi_ban_points {
+    float: left;
+    width: 100px;
+    margin-top: 5px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+}
+#budbi_ban {
+    float: left;
+    margin-left: 10%;
+    margin-top: 7px;
+}
+
+/* find multies */
+#find_multies_div {
+    display: none;
+}
+#fmd_search_div {
+    position: relative;
+	float: left;
+    width: 100%;
+    height: 80px;
+}
+#fmd_last_login_lbl {
+    position: absolute;
+    left: 5px;
+}
+#fmd_last_login_in {
+    position: absolute;
+    left: 5px;
+    top: 15px;
+	width: 140px;
+}
+#fmd_user_ip_lbl {
+    position: absolute;
+    left: 185px;
+}
+#fmd_user_ip_in {
+   position: absolute;
+    left: 185px;
+    top: 15px;
+    width: 100px;
+}
+#fmd_ip_lbl {
+    position: absolute;
+    left: 400px;
+}
+#fmd_ip_in {
+    position: absolute;
+    left: 310px;
+    top: 15px;
+    width: 250px;
+}
+#fmd_profile_id_lbl {
+    position: absolute;
+    left: 595px;
+}
+#fmd_profile_id_in {
+    position: absolute;
+    left: 590px;
+    top: 15px;
+    width: 100px;
+}
+#fmd_search {
+    margin-left: 10px;
+    position: absolute;
+    left: 720px;
+    top: 20px;
+}
+
+#fmd_result {
+    margin-top: 30px;
+    border-left: 5px solid rgb(93, 127, 159);
+    border-right: 5px solid rgb(93, 127, 159);
+    border-bottom: 10px solid rgb(93, 127, 159);
+    float: left;
+    margin-left: 1%;
+    width: 97%;
+    margin-bottom: 10px;
+}
+#fmdr_head {
+    font-size: 25px;
+    background-color: rgb(93, 127, 159);
+    text-align: center;
+    color: white;
+    line-height: 100%;
+    padding: 5px;
+}
+.fmdr_info {
+    float: left;
+    width: 98%;
+    border-bottom: 1px solid gray;
+    margin: 10px;
+    color: black;
+    margin-left: 1%;
+}
+.fmdri_user {
+    color: gray;
+    float: left;
+    width: 200px;
+	text-align: center;
+}
+.fmdri_id {
+    float: left;
+    width: 60px;
+}
+.fmdri_ip {
+    float: left;
+    width: 150px;
+	text-align: center;
+}
+.fmdri_date {
+    float: left;
+    width: 130px;
+	text-align: center;
+}
+.fmdri_time {
+    float: left;
+    width: 150px;
+	text-align: center;
+}
+
+/* game updates */
+#game_updates_div {
+	display: none;
+}
+.gud_divs {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+#gud_reply {
+    color: #cf3d3d;
+}
+.gud_lbl {
+    margin-left: 5px;
+	clear: left;
+	float: left;
+}
+#nguh_input {
+    width: 880px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+	clear: left;
+}
+.ngu_desc_input {
+    width: 880px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    clear: left;
+    float: left;
+}
+#ngu_add_more_desc {
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    background-color: #a73c3c;
+	clear: left;
+}
+#ngu_add {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: #617b61;
+}
+#edit_game_update_div {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+}
+#eguh_id_input {
+    float: left;
+    margin-left: 10px;
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 10px;
+}
+#egu_desc_id_input {
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+    float: left;
+}
+#eguh_input {
+    width: 880px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+	clear: left;
+	float: left;
+}
+#egu_desc_input {
+    width: 880px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    clear: left;
+	float: left;
+}
+#egu_heading_edit {
+    margin-left: 25px;
+	margin-top: 10px;
+	float: left;
+	clear: left;
+}
+#egu_desc_edit {
+    margin-left: 25px;
+	margin-top: 10px;
+	clear: left;
+	float:left;
+}
+#egu_add_desc_id_input {
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+    float: left;
+}
+#egu_add_desc_input {
+    width: 880px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    clear: left;
+    float: left;
+}
+#egu_add_desc_edit {
+    float: left;
+    clear: left;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+#egu_desc_del_input {
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+    float: left;
+}
+#egu_del_desc {
+    background-color: #a73c3c;
+    float: left;
+    clear: left;
+    margin-left: 20px;
+}
+#egu_upd_del_input {
+    width: 300px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+    float: left;
+}
+#egu_del_upd_edit {
+    float: left;
+    clear: left;
+    margin-left: 25px;
+    margin-top: 10px;
+    background-color: #a73c3c;
+}
+
+/* vpn users */
+#vpn_users_div {
+    display: none;
+}
+#vpn_error {
+    color: #cf3d3d;
+}
+#vpn_search_div {
+    float: left;
+    margin-top: 25px;
+    position: relative;
+    height: 100px;
+	width: 100%;
+}
+#vpn_last_login_lbl {
+	position: absolute;
+	left: 5px;
+}
+#vpn_last_login_input {
+	position: absolute;
+	top: 20px;
+	width: 150px;
+}
+#vpn_days_in_lbl {
+	position: absolute;
+	left: 185px;
+}
+#vpn_days_in_input {
+	position: absolute;
+	top: 20px;
+	left: 180px;
+	width: 150px;
+}
+#vpn_ip_lbl {
+	position: absolute;
+	left: 370px;
+}
+#vpn_ips_input {
+	position: absolute;
+    top: 20px;
+    width: 135px;
+    left: 368px;
+}
+#vpn_profile_id_lbl {
+	position: absolute;
+	left: 545px;
+}
+#vpn_profile_id_in {
+	position: absolute;
+    top: 20px;
+    left: 540px;
+    width: 150px;
+}
+#vpn_search {
+    position: absolute;
+    left: 730px;
+    top: 25px;
+}
+
+#vpn_result {
+    margin-top: 30px;
+    border-left: 5px solid rgb(93, 127, 159);
+    border-right: 5px solid rgb(93, 127, 159);
+    border-bottom: 10px solid rgb(93, 127, 159);
+    float: left;
+    margin-left: 1%;
+    width: 97%;
+    margin-bottom: 10px;
+}
+#vpn_head {
+    font-size: 25px;
+    background-color: rgb(93, 127, 159);
+    text-align: center;
+    color: white;
+    line-height: 100%;
+    padding: 5px;
+}
+.vpn_info {
+    float: left;
+    width: 98%;
+    border-bottom: 1px solid gray;
+    margin: 10px;
+    color: black;
+    margin-left: 1%;
+}
+.vpn_user {
+    color: gray;
+    float: left;
+    width: 200px;
+    text-align: center;
+}
+.vpn_user_id {
+    float: left;
+    width: 70px;
+}
+.vpn_ips {
+    float: left;
+    width: 150px;
+    text-align: center;
+}
+.vpn_days_in_game {
+    float: left;
+    width: 190px;
+    text-align: center;
+}
+
+/* product market history */
+#product_market_hist_div {
+    display: none;
+}
+#pmh_error {
+    color: #cf3d3d;
+}
+#pmh_search_div {
+    float: left;
+    position: relative;
+    height: 100px;
+    margin-top: 25px;
+	width: 100%;
+	font-size: 18px;
+}
+#product_market_hist_div {
+    display: none;
+}
+#pmh_search_div {
+    float: left;
+    position: relative;
+    height: 100px;
+    margin-top: 25px;
+}
+#pmh_profile_id_lbl {
+    position: absolute;
+    left: 5px;
+}
+#pmh_profile_id_input {
+	position: absolute;
+	top: 20px;
+	width: 130px;
+}
+#pmh_bought_from_lbl {
+    position: absolute;
+    left: 150px;
+}
+#pmh_bought_from_input {
+    position: absolute;
+    left: 145px;
+    top: 20px;
+    width: 130px;
+}
+#pmh_percent_lbl {
+    position: absolute;
+    left: 295px;
+}
+#pmh_percent_input {
+    position: absolute;
+    left: 290px;
+    top: 20px;
+    width: 120px;
+}
+#pmh_country_id_lbl {
+    position: absolute;
+    left: 430px;
+}
+#pmh_country_id_input {
+    position: absolute;
+    left: 425px;
+    width: 130px;
+    top: 20px;
+}
+#pmh_days_lbl {
+    position: absolute;
+    left: 570px;
+}
+#pmh_days_input {
+    position: absolute;
+    left: 565px;
+    top: 20px;
+    width: 100px;
+}
+#pmh_search {
+    position: absolute;
+    left: 720px;
+    top: 25px;
+}
+
+#pmh_result {
+    margin-top: 30px;
+    border-left: 5px solid rgb(93, 127, 159);
+    border-right: 5px solid rgb(93, 127, 159);
+    border-bottom: 10px solid rgb(93, 127, 159);
+    float: left;
+    margin-left: 1%;
+    width: 97%;
+    margin-bottom: 10px;
+}
+#pmh_result a {
+	color: rgb(70, 70, 70);
+}
+#pmh_head {
+    font-size: 25px;
+    background-color: rgb(93, 127, 159);
+    text-align: center;
+    color: white;
+    line-height: 100%;
+    padding: 5px;
+}
+#pmh_table_result tr td {
+    width: 8.33%;
+}
+
+/* request new country */
+.shi_details {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid rgb(131, 131, 131);
+}
+.shid_col1 {
+    float: left;
+    width: 50%;
+}
+.shid_col2 {
+    float: left;
+    width: 50%;
+}
+.requesting_country {
+    float: left;
+    padding: 10px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    border-bottom: 2px solid;
+}
+.rc_country_flag {
+    float: left;
+    width: 140px;
+    height: 70px;
+}
+.rc_country_name {
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.accept_country_request {
+    float: right;
+    margin-top: 20px;
+}
+.decline_country_request {
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.country_color {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.country_color_input {
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.rc_sample_colors {
+    float: left;
+    margin-left: 50px;
+    width: 250px;
+    text-align: center;
+}
+.rc_sample_colors p {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}

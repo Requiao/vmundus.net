@@ -1,0 +1,50 @@
+#container {
+    width: 75.8333333%;
+    min-width: 910px;
+    float: left;
+    margin-left: 2.5%;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: Enriqueta;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+    position: relative;
+}
+#updates_head {
+    float: left;
+    width: 100%;
+    background-color: rgb(105, 169, 202);
+    box-shadow: inset 0px 0px 25px 0px rgb(72, 120, 139);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#timeline {
+    width: 820px;
+    float: left;
+    border-left: 80px solid #417eb4;
+    margin-left: 1%;
+}
+.update_info {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 15px;
+}
+.update_day {
+    position: absolute;
+    left: -80px;
+    color: white;
+	width: 80px;
+    text-align: center;
+}
+.update_heading {
+    font-size: 25px;
+    padding-left: 10px;
+    border-bottom: 1px solid gray;
+    background-color: #a3a3a3;
+    color: white;
+}
+.description {
+    width: 100%;
+}

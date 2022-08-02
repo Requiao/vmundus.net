@@ -1,0 +1,207 @@
+body {
+	width: 1800px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../img/image_overlay.png) repeat, url(../img/background_top.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: auto, cover;
+}
+p {
+	margin:0;
+	padding:0;
+}
+a {
+	text-decoration:none;
+	color: rgb(7, 130, 193);
+}
+nav a, footer a {
+	color:white !important;
+}
+main {
+	width:100%;
+	min-width:1600px;
+	margin-top:20px;
+}
+abbr[title] {
+    cursor: inherit !important;
+    text-decoration: none !important;
+}
+span {
+	float: left;
+}
+input {
+	margin: 0;
+	padding: 0;
+}
+img {
+	overflow: hidden;
+}
+
+#page_body {
+    float: left;
+    width: 100%;
+	box-shadow: 0 0 3px 0px black;
+	background-color: white;
+}
+#container {
+	width: 75.8333333%;
+    min-width: 910px;
+    float: left;
+    margin-left: 2.5%;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 20px;
+    font-family: Enriqueta;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+}
+#page_head {
+	float: left;
+    width: 100%;
+    background-color: rgb(105, 169, 202);
+    box-shadow: inset 0px 0px 25px 0px rgb(72, 120, 139);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+blockquote {
+	font-style: italic;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	padding: 2px 0;
+	border-style: solid;
+	border-color: #ccc;
+	border-width: 0;
+	padding-left: 20px;
+	padding-right: 8px;
+	border-left-width: 5px;
+}
+
+/* scroll */
+.scroll_style::-webkit-scrollbar {
+    width: 15px;
+}
+ 
+.scroll_style::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 5px;
+}
+ 
+.scroll_style::-webkit-scrollbar-thumb {
+    background-color: rgb(84, 137, 180);
+    outline: 1px solid slategrey;
+    border-radius: 5px;
+}
+
+/* info blocks */
+.heads {
+	font-size: 22px;
+    text-align: center;
+    background-color: rgb(85, 135, 160);
+    box-shadow: inset 0px 0px 25px 0px rgb(52, 79, 90);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white;
+	width: 100%;
+}
+.info_blocks {
+	position: relative;
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 10px;
+	width: 100%;
+	border-bottom: 1px solid rgb(131, 131, 131);
+}
+.info_blocks a {
+	color:rgb(7, 130, 193);
+}
+.info_blocks_no_border {
+	border-bottom: none;
+}
+
+/* product icon/details/amount */
+.icon_amount {
+    width: 110px;
+    float: left;
+    box-shadow: 0px 0px 3px 1px #345879;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.product_icon {
+    width: 110px;
+    height: 80px;
+    float: left;
+}
+.amount {
+    float: left;
+    background-color: #345879;
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+	font-size: 20px;
+	font-family: Enriqueta;
+}
+
+/* poppup */
+#for_popups_pop, #for_popups_pop2 {
+	position: fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	display:none;
+	background-color: rgba(86,116,127,0.5);
+	z-index: 1;
+}
+#for_popups_pop2 {
+	z-index: 2;
+}
+
+/* modal */
+.modal_error {
+	font-size: 30px;
+    margin-top: 8px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}
+.modal_notification {
+	font-family: Enriqueta;
+    font-size: 20px;
+    padding: 5px;
+	padding-top: 10px;
+}
+
+/* button */
+.button {
+	width:100px;
+	padding:10px 5px 10px 5px;
+	font-family: Enriqueta;
+	font-size:20px;
+	text-align:center;
+	color:white;
+	line-height:100%;
+	cursor:pointer;
+	box-shadow: 0 2px 2px 1px rgba(0,0,0,.25), 
+				0 2px 0 0 rgb(128, 128, 128), 
+				0 0 7px 3px rgba(0, 0, 0, 0.1) inset, 
+				0 3px 7px 3px rgba(0, 0, 0, 0.1) inset;
+	border-radius:4px;
+}
+.button:active {
+	box-shadow:0 3px 7px 3px rgba(0, 0, 0, 0.1) inset;
+}
+.red {
+	background-color: rgb(245, 82, 88);
+}
+.blue {
+	background-color: rgb(42,169,219);
+}
+.green {
+    background-color: rgb(128, 182, 109);
+}

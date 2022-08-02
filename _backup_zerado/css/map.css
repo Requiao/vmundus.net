@@ -1,0 +1,223 @@
+body {
+	overflow:hidden;
+	width: 100% !important;
+}
+#fixed_nav {
+	display:none;
+}
+polygon:hover {
+	cursor:pointer;
+}
+.region_details {
+	display:none;
+}
+text {
+	font-size:20px;
+	fill:rgb(220,220,220);
+	display:none;
+}
+#svgTag {
+	position:absolute;
+	left:-2200px;
+	top:-5500px;
+	overflow: hidden;
+}
+a:hover text {
+	fill:rgb(255,255,255);
+	opacity:1;
+}
+a:hover {
+	opacity:0.75;
+}
+polygon {
+	stroke-dasharray:10, 3;
+	stroke:black;
+}
+nav {
+	position:fixed;
+}
+
+/* map controls */
+#map_controls {
+	font-family: Enriqueta;
+    min-width: 300px;
+    width: 300px;
+    background-color: rgba(245,246,247,0.2);
+    height: 210px;
+    top: 50px;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+	position: fixed;
+	z-index: 1;
+}
+#map_controls p {
+    font-size: 50px;
+    background-color: rgb(33,150,243);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 60px;
+    text-align: center;
+    position: absolute;
+    box-shadow: 0 0 5px 0px #7f7f7f;
+    line-height: 60px;
+}
+#map_controls p:active {
+	box-shadow: none;
+}
+#zoom_in {
+    left: 30px;
+    top: 10px;
+}
+#map_up {
+    left: 120px;
+    top: 10px;
+}
+#zoom_out {
+    left: 210px;
+    top: 10px;
+}
+#map_left {
+    left: 30px;
+    top: 80px;
+}
+#map_right {
+    left: 210px;
+    top: 80px;
+}
+#map_down {
+    left: 120px;
+    top: 80px;
+}
+#show_names {
+    bottom: 10px !important;
+    left: 50px !important;
+    font-size: 22px !important;
+    width: 200px !important;
+    background-color: rgb(76,175,80) !important;
+    line-height: 40px !important;
+}
+
+/* region info div */
+.info_blocks {
+	margin-bottom: 0px !important;
+}
+#region_info {
+	font-family: Enriqueta;
+    width: 300px;
+    height: 500px;
+    margin: 0;
+    background-color: rgb(245,246,247);
+    top: 270px;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+    position: relative;
+    border: 2px solid rgb(38,87,40);
+    z-index: 1;
+}
+.region_name_head {
+	float: left;
+	width: 100%;
+	font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid rgb(170,170,170);
+	color: rgb(7, 130, 193);
+    display: block;
+}
+.country {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgb(170,170,170);
+}
+.country img {
+	margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+	margin-bottom: 5px;
+    float: left;
+    width: 60px;
+    height: 29px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 5px 0px rgb(114, 141, 153);
+}
+.reg_name {
+	float: left;
+	font-size: 24px;
+    text-align: center;
+	color: rgb(7, 130, 193);
+    display: block;
+}
+
+/*region neighbor div*/
+.neighbor_info {
+	float: left;
+    width: 98%;
+    border-bottom: 1px solid rgb(170,170,170);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 1%;
+	padding-bottom: 5px;
+}
+.neighbor_flag {
+	width: 50px;
+    height: 25px;
+    float: left;
+	border-radius: 1px;
+    box-shadow: 0px 0px 5px 0px rgb(114, 141, 153);
+}
+.neighbor_name {
+	font-size: 20px;
+    margin-left: 5px;
+    float: left;
+}
+
+/*tabs div*/
+#tabs {
+	display: block !important;
+	position: absolute;
+    top: 0;
+    right: -25px;
+    width: 25px;
+    cursor: pointer;
+    font-family: Amiri;
+}
+#pin {
+	padding-top:5px;
+	height:30px;
+	width:25px;
+	font-size:20px;
+	color:rgb(25,35,55);
+	background-color:rgb(245,246,247);
+	border:1px solid rgb(170,170,170);
+	border-radius:0 3px 7px 0;
+}
+#pin span {
+	margin:0;
+	padding-left:2px;
+	-ms-transform: rotate(43deg); /* IE 9 */
+    -webkit-transform: rotate(43deg); /* Chrome, Safari, Opera */
+    transform: rotate(43deg);
+}
+#info {
+	background-color:rgb(38,87,40);
+	border:1px solid rgb(38,87,40);
+}
+#neighbor {
+	background-color:rgb(48,48,48);
+	border:1px solid rgb(48,48,48);
+}
+#info, #neighbor {
+	color:white;
+	border-radius:0 3px 7px 0;
+	height:75px;
+	width:25px;
+}
+#info p, #neighbor p {
+	-ms-transform: rotate(270deg); /* IE 9 */
+    -webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
+    transform: rotate(270deg);
+}
+#info p {
+	margin-top:30px;
+}
+#neighbor p {
+	margin-top:50px;
+}

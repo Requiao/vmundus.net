@@ -1,0 +1,113 @@
+.invest_resources_for_research {
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(76, 131, 181);
+    box-shadow: inset 0px 0px 9px 3px rgb(51, 90, 125);
+    cursor: pointer;
+    color: white;
+}
+.invest_resources:active {
+	box-shadow: none;
+}
+.support_rec_input {
+    float: left;
+    width: 107px;
+    height: 20px;
+    font-size: 20px;
+	text-align: center;
+	font-family: monospace;
+}
+.support_research {
+    background-color: rgb(116, 160, 101);
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    cursor: pointer;
+	text-align: center;
+}
+.support_research:active {
+	box-shadow: inset 0px 0px 5px rgb(87,87,87);
+}
+
+.research_building_div {
+    float:  left;
+	position: relative;
+	margin: 20px;
+	width: 390px;
+	height: 450px;
+}
+.rbd_name {
+    float:  left;
+    font-size: 22px;
+    text-align: center;
+    background-color: rgb(87, 156, 190);
+    box-shadow: inset 0px 0px 25px 0px rgb(60, 114, 141);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white;
+    width: 100%;
+}
+.rbd_image {
+    float:  left;
+    clear:  left;
+    width: 100%;
+	height: 195px;
+}
+.rbd_not_researched {
+	position: absolute;
+    background-color: rgba(116, 116, 116, 0.9);
+    width: 100%;
+    top: 30px;
+}
+.rbd_time {
+    float: left;
+    clear:  left;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(151, 151, 151);
+    box-shadow: inset 0px 0px 9px 3px rgb(125, 125, 125);
+    color: white;
+}
+.rbd_description {
+    float:  left;
+    clear:  left;
+    background-color: #5599ba;
+    width: 98%;
+    color:  white;
+    padding: 1%;
+	border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.building_research_bar {
+    width: 99.5%;
+    height: 25px;
+    background-color: rgb(227, 227, 227);
+    color: black;
+    text-align: center;
+    background-size: 25% 25px;
+    border: 1px solid #b7b6b6;
+    box-shadow: inset 0px 1px 3px 0px #888888;
+    float: left;
+    clear: left;
+}
+.progress {
+    height: 25px;
+}
+.bar_mark {
+    margin-top: -28px;
+    float: left;
+    width: 100%;
+}
+.research_end_time {
+	float: left;
+	width: 100%;
+	text-align: center;
+    color: white;
+    background-color: rgb(151, 151, 151);
+    box-shadow: inset 0px 0px 9px 3px rgb(125, 125, 125);
+}

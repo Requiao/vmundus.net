@@ -1,0 +1,227 @@
+#market_head {
+	float: left;
+    width: 100%;
+    background-color: rgb(105, 169, 202);
+    box-shadow: inset 0px 0px 25px 0px rgb(72, 120, 139);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* REWARD FOR USER LEVEL BEFORE RESET */
+#user_rewards_div {
+    float: left;
+    width: 725px;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    box-shadow: 0px 0px 2px 0px rgb(57, 57, 57);
+}
+#urd_collected_lbl {
+    position: absolute;
+    top: 0px;
+    left: 125px;
+    width: 140px;
+    text-align: center;
+}
+#urd_available_lbl {
+    position: absolute;
+    left: 290px;
+    top: 0px;
+    width: 140px;
+    text-align: center;
+}
+#urd_can_collect_lbl {
+    position: absolute;
+    left: 450px;
+    top: 0;
+    width: 140px;
+    text-align: center;
+}
+#urd_prod_icon {
+    position: absolute;
+    left: 15px;
+    top: 40px;
+    height: 70px;
+    width: 96px;
+}
+#urd_collected {
+    position: absolute;
+    left: 125px;
+    top: 60px;
+    width: 140px;
+    text-align: center;
+    color: black;
+    line-height: 35px;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+}
+#urd_available {
+    position: absolute;
+    left: 290px;
+    top: 60px;
+    width: 140px;
+    text-align: center;
+    background-color: rgb(51, 103, 154);
+    color: white;
+    line-height: 35px;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    border-radius: 3px;
+}
+#urd_can_collect {
+    position: absolute;
+    left: 450px;
+    top: 60px;
+    width: 140px;
+    text-align: center;
+    background-color: rgb(188, 147, 46);
+    color: white;
+    line-height: 35px;
+    font-size: 25px;
+    font-family: 'Times New Roman';
+    border-radius: 3px;
+}
+#urd_collect {
+    position: absolute;
+    left: 595px;
+    top: 56px;
+}
+
+
+/* OLD */
+.pi_head {
+    height: 30px;
+    color: white;
+    background-color: rgb(84, 137, 180);
+    box-shadow: inset 0px 0px 9px 3px rgb(68, 107, 139);
+    text-align: center;
+}
+.purchase_item {
+    float: left;
+    width: 350px;
+    box-shadow: 0px 1px 5px 0px rgb(87,87,87);
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.purchase_item img {
+	width: 150px;
+	float: left;
+}
+.pi_details {
+    float: left;
+}
+.pi_details span {
+    float: inherit;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+.pi_form {
+	clear: left;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#reply_info span {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+#error {
+    color: rgb(245, 82, 88) !important;
+    font-size: 40px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+#reply_ok {
+    float: left;
+    clear: left;
+    margin-left: 215px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+#purchase_sum {
+    width: 540px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    position: relative;
+    overflow: auto;
+    box-shadow: 0px 1px 3px 1px rgb(87,87,87);
+}
+#ps_head {
+    text-align: center;
+    font-size: 25px;
+}
+#purchase_sum span {
+	font-size: 60px;
+    color: rgb(72, 172, 38);
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+}
+#ps_msg {
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+}
+.items_bough {
+    float: left;
+    clear: left;
+    margin-left: 45px;
+    margin-top: 5px;
+}
+
+
+#left_over_purchases {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.leftover_info {
+    float: left;
+    margin-left: 25px;
+    color: #d03e3e;
+    clear: left;
+}
+
+.collect_leftover {
+    float: left;
+    margin-left: 10px;
+    color: rgb(70, 70, 70);
+    text-decoration: underline;
+    cursor: pointer;
+}
+#m_note {
+    float: left;
+    clear: left;
+    margin-top: 50px;
+    padding: 1%;
+    font-size: 15px;
+    width: 98%;
+    background-color: #dad8d8;
+}

@@ -1,0 +1,231 @@
+/* country list */
+#country_list {
+	height: 35px;
+    border: 1px solid rgb(163, 163, 163);
+    float: right;
+    width: 330px;
+    margin-left: 5px;
+	margin-right: 5px;
+    background-color: white;
+	cursor:pointer;
+	position:relative;
+	margin-top: 10px;
+}
+#country_list span {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+}
+#countries_div {
+	display:none;
+	overflow: auto;
+    height: 265px;
+    width: 330px;
+    right: 6px;
+    position: absolute;
+    top: 87px;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 3px solid rgb(163, 163, 163);
+	cursor:pointer;
+	z-index: 1;
+}
+.country {
+	width: 100%;
+    height: 45px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+#country {
+	width: 100%;
+    height: 35px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+.country:hover {
+	background-color: rgb(155, 155, 155);
+    color: white;
+}
+#country img {
+	width: 55px;
+	height: 35px;
+    float: left;
+	clear: left;
+}
+.country img {
+	width: 55px;
+    height: 35px;
+    float: left;
+    clear: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.country p, #country p {
+	float: left;
+    margin: 0;
+    margin-left: 5px;
+    font-family: Enriqueta;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+#product_list {
+	float: left;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #8e8e8e;
+    border-top: 1px solid #8e8e8e;
+    margin-top: 10px;
+}
+#countries {
+	height: 34px;
+    width: 190px;
+    margin-right: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    float: right;
+}
+.product_market_icon {
+	width: 120px;
+    float: left;
+    border-bottom: 1px solid #828282;
+    border-right: 1px solid #828282;
+    background: radial-gradient(circle, #ffffff, #ebf1f875, #61abff75);
+    cursor: pointer;
+}
+.product_market_icon img {
+	width: 110px;
+    height: 80px;
+    float: left;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+/* product offers */
+#product_offers {
+	display:none;
+	float:left;
+	width: 100%;
+}
+#product_offers div {
+	margin-bottom: 15px;
+    position: relative;
+    clear: both;
+    border-bottom: 2px solid #5b8abe;
+    float: left;
+    width: 98%;
+    margin-left: 1%;
+}
+#pq_heads {
+    border-bottom: 1px solid #8e8e8e !important;
+}
+#q {
+	float: left;
+    margin-left: 140px;
+}
+#p {
+	float: left;
+	margin-left: 210px;
+}
+.seller_name {
+	color: rgb(7, 130, 193);
+    float: left;
+   margin-bottom: 2px;
+}
+.user_image {
+	height:91px;
+    width:70px;
+    float: left;
+    clear: left;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+	margin-bottom: 10px;
+}
+.offered_product_img {
+	height: 80px;
+    width: 110px;
+    margin-top: 8px;
+    margin-left: 15px;
+	float: left;
+}
+.price {
+	font-family: 'Space Mono', monospace;
+    top: 55px;
+	left: 205px;
+    position: absolute;
+	background-color: rgb(47, 109, 179);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+	width: 150px;
+    text-align: center;
+}
+.quantity {
+	top: 55px;
+    left: 410px;
+    position: absolute;
+}
+.quantity_input {
+	width: 130px;
+    float: right;
+    height: 30px;
+    margin-top: 25px;
+	margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+}
+.buy, .buy_for_country, .buy_for_corp {
+	float:right;
+	margin-top: 23px;
+	margin-right: 20px;
+}
+
+/* reply */
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#msg {
+	font-family: Enriqueta;
+    font-size: 20px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 220px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.blue {
+	background-color: rgb(42,169,219);
+}
+#error {
+	font-size: 30px;
+    margin-top: 8px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}
+#reply_info span {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+	float: left;
+}

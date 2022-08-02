@@ -1,0 +1,195 @@
+#container {
+	float:left;
+	min-width: 700px;
+    width: 60%;
+    margin-left: 1.6666667%;
+	margin-bottom:10px;
+	position:relative;
+	font-size:20px;
+	font-family: Enriqueta;
+	background-color:white;
+	box-shadow: 0px 1px 2px rgb(87,87,87);
+}
+#calc_head {
+    float: left;
+    width: 100%;
+    background-color: rgb(105, 169, 202);
+    box-shadow: inset 0px 0px 25px 0px rgb(72, 120, 139);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+#calculate {
+    float: right;
+    margin-right: 20px;
+    background-color: rgb(74, 98, 118);
+    color: white;
+    width: 180px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 7px;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px rgb(87,87,87);
+}
+#calculate:active {
+	box-shadow: none;
+}
+
+
+#salary_lbl {
+    float: left;
+    margin-left: 28px;
+    margin-top: 10px;
+}
+#salary_input {
+    width: 155px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+	float: left;
+}
+#skill_lbl {
+    float: left;
+    margin-left: 46px;
+    margin-top: 10px;
+    clear: left;
+}
+#skill_input {
+    float: left;
+    width: 155px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+}
+#revenue_lbl {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    clear: left;
+}
+#revenue_input {
+    float: left;
+    width: 155px;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+}
+.etmd_dep_product {
+    width: 200px;
+    float: left;
+    box-shadow: 0px 0px 2px 1px #345879;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.type_menu {
+    background-color: #7a3232;
+    float: left;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+	text-align: center;
+}
+#etmd_head {
+    margin-left: 15px;
+}
+#energy_types_menu_div {
+    float: left;
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* calc */
+.product_details_div {
+    float: left;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid gray;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+.prod_head_name {
+    width: 100%;
+    text-align: center;
+    background-color: #793434;
+    box-shadow: inset 0px 0px 9px 3px rgb(86, 35, 35);
+    color: white;
+    float: left;
+}
+.price_lbl {
+    position: absolute;
+    left: 250px;
+    top: 50px;
+}
+.price_input {
+    position: absolute;
+    left: 250px;
+    top: 70px;
+    width: 155px;
+    margin-top: 10px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+}
+.calc_price_lbl {
+    position: absolute;
+    left: 475px;
+    top: 50px;
+	width: 160px;
+    text-align: center;
+}
+.calc_price {
+    position: absolute;
+    left: 475px;
+    top: 85px;
+    width: 160px;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(47, 109, 179);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+}
+.depend_div {
+    float: left;
+    clear: left;
+}
+.depends_lbl {
+    float: left;
+    clear: left;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.product_icon {
+    height: 80px;
+    width: 110px;
+    float: left;
+}
+.about_product, .dep_product {
+    width: 110px;
+    height: 105px;
+    float: left;
+    box-shadow: 0px 0px 2px 1px #345879;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.dep_product i, .about_product i {
+	position: absolute;
+    color: #b34a4a;
+    font-size: 25px;
+	display: none;
+}
+.about_product {
+	box-shadow: 0px 0px 2px 1px #793434!important;;
+}
+.about_product .amount {
+	background-color: #793434!important;
+}
+.amount span {
+	float: initial;
+}

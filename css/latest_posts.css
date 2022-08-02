@@ -1,0 +1,93 @@
+#container {
+	width: 75.8333333%;
+    min-width: 910px;
+    float: left;
+    margin-left: 2.5%;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 20px;
+    font-family: Enriqueta;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+}
+#page_head {
+    float: left;
+    width: 100%;
+   background-color: rgb(105, 169, 202);
+    box-shadow: inset 0px 0px 25px 0px rgb(72, 120, 139);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#latest_posts_div {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+    border-radius: 3px;
+    margin-bottom: 20px;
+    float: left;
+}
+#latest_posts_div_head {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    background-color: #795548;
+    box-shadow: inset 0px 0px 9px 3px rgb(80, 57, 48);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    float: left;
+    color: white;
+}
+.lpd_short_descript {
+    float: left;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #32596f;
+	position: relative;
+}
+.lpd_short_descript img {
+    height: 70px;
+    width: 54px;
+    float: left;
+    clear: left;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.lpd_blogger_name {
+    color: rgb(7, 130, 193);
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+	width: 150px;
+}
+.lpd_title {
+    float: left;
+    color: gray;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.lpd_post_views_likes_div {
+    color: rgb(51, 51, 51);
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+}
+.lpd_post_views_likes_div i {
+	cursor: initial !important;
+}
+.lpd_time {
+    color: rgb(51, 51, 51);
+    position: absolute;
+    right: 0px;
+}
+.views, .likes {
+    float: right;
+    margin-right: 20px;
+}

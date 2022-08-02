@@ -1,0 +1,210 @@
+/* union */
+#union_div {
+	position: relative;
+    float: left;
+    width: 100%;
+}
+#union_flag {
+	width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+#union_abbr {
+	float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+#union_name {
+	font-size: 25px;
+    position: absolute;
+    left: 220px;
+    top: 45px;
+}
+#union_color {
+	background-color: rgb(145,255,120);
+    font-size: 20px;
+    position: absolute;
+    left: 220px;
+    top: 80px;
+    padding: 5px;
+    border-radius: 5px;
+}
+#union_desc {
+	font-style: italic;
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 50px;
+    width: 96%;
+    clear: both;
+	overflow: hidden;
+}
+#union_leader {
+	position: absolute;
+    color: black;
+    top: 120px;
+    left: 10px;
+}
+#edit_union {
+	position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+/* edit union */
+#edit_union_info {
+	width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0px 2px 5px 2px #345879;
+    font-family: Enriqueta;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}
+#new_union_name, #new_union_abbr {
+	font-size: 30px;
+    height: 35px;
+    width: 475px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-family: Enriqueta;
+    float: left;
+    text-align: center;
+}
+#new_union_color {
+	margin-left: 195px;
+    width: 110px;
+    height: 55px;
+    margin-bottom: 15px;
+}
+#new_union_desc {
+	font-size: 20px;
+    height: 230px;
+    width: 475px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    font-family: Enriqueta;
+    float: left;
+}
+#edit_unon {
+	float: left;
+    margin-left: 102px;
+}
+#union_img_info {
+	float: left;
+    margin-left: 10px;
+}
+#union_img_upload {
+	float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* party members */
+#members_div {
+	float: left;
+    clear: left;
+    width: 100%;
+	margin-top: 20px;
+}
+#union_members_head {
+	background-color: rgb(93, 127, 159);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+.member_div {
+	position: relative;
+    float: left;
+	width: 300px;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 3px 0px rgb(87,87,87);
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+	margin-bottom: 10px;
+}
+.member_name {
+	color: white;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(111, 148, 183);
+}
+.is_founder {
+	width: 100%;
+    text-align: center;
+}
+.member_img {
+	    width: 200px;
+    height: 100px;
+    float: left;
+    clear: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 4px 1px rgb(111, 148, 183);
+}
+
+#cancel {
+	float: left;
+    margin-left: 75px;
+    margin-bottom: 10px;
+}
+
+/* reply */
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#msg {
+	font-family: Enriqueta;
+    font-size: 25px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 220px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#error {
+	font-size: 30px;
+    margin-top: 13px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}
+#reply_info span {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}

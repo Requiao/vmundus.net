@@ -1,0 +1,1639 @@
+#page_menu {
+    width: 100%;
+    height: 35px;
+    float: left;
+    background-color: rgb(241, 241, 241);
+    margin-top: 0px;
+    box-shadow: 0px 0px 2px rgb(87,87,87);
+}
+#page_menu p {
+	float: left;
+    width: 25%;
+    height: 34px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#quit_from_gov {
+    float: right;
+    margin-right: 20px;
+    background-color: rgb(190, 88, 88);
+    color: white;
+    width: 180px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px rgb(87,87,87);
+}
+#quit_from_gov:active {
+	box-shadow: none;
+}
+#yes_quit {
+    float: left;
+    margin-left: 127px;
+}
+#laws_in_progress_div, #issue_laws_div, #country_currency_div, #warehouse_div {
+	display:none;
+	float: left;
+    width: 100%;
+}
+#cancel {
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+/* sub divs */
+.heads {
+	font-size: 22px;
+    text-align: center;
+    background-color: rgb(85, 135, 160);
+    box-shadow: inset 0px 0px 25px 0px rgb(52, 79, 90);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white;
+	width: 100%;
+}
+.info_blocks {
+	position: relative;
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 10px;
+	width: 96%;
+	margin-left: 2%;
+	border-bottom: 1px solid rgb(131, 131, 131);
+}
+.info_blocks a {
+	color:rgb(7, 130, 193);
+}
+
+/* laws in progress */
+.pli_description {
+	float: left;
+    clear: left;
+    margin-left: 5px;
+	width: 620px;
+	border-left: 5px solid #5d7f9f;
+    background-color: rgba(93, 127, 159, 0.2);
+    margin-bottom: 5px;
+	padding-left: 5px;
+	margin-top: 10px;
+}
+.pli_description img {
+	max-width: 550px;
+}
+.welcome_msg {
+    float: left;
+}
+.pli_proposed_by {
+	float: left;
+    clear: left;
+    margin-left: 5px;
+	border-left: 5px solid #f6665c;
+    background-color: rgba(246, 102, 92, 0.2);
+    margin-bottom: 5px;
+	padding-left: 5px;
+}
+.pli_proposed_on {
+	float: left;
+    clear: left;
+	margin-left: 5px;
+	border-left: 5px solid #4eb370;
+    background-color: rgba(78, 179, 112, 0.2);
+    margin-bottom: 5px;
+	padding-left: 5px;
+}
+.pli_expires_in {
+	font-family: 'Space Mono', monospace;
+    font-size: 25px;
+    float: right;
+    margin-top: -70px;
+    margin-bottom: 70px;
+    margin-right: 90px;
+}
+.pli_no_vote {
+	border: 2px solid rgb(246, 102, 92);
+	cursor:pointer;
+	float: right;
+    margin-right: 20px;
+    margin-top: -55px;
+    margin-bottom: 10px;
+}
+.pli_no_yes_voted {
+	cursor:default !important;
+	border: 2px solid rgb(190, 190, 190) !important;
+}
+.pli_times_vote span {
+	font-size: 50px;
+    padding: 10px;
+    margin: 0;
+    width: 60px;
+    text-align: center;
+    color: rgb(246, 102, 92);
+}
+.pli_times_check_voted span {
+    color: rgb(190, 190, 190)!important;
+}
+.pli_no_votes_vote {
+	background-color: rgb(246, 102, 92);
+    color: white;
+	text-align:center;
+	float: left;
+    width: 100%;
+}
+.pli_no_yes_votes_voted {
+	background-color: rgb(190, 190, 190)!important;
+}
+.pli_yes_vote {
+	border: 2px solid rgb(78, 179, 112);
+	cursor:pointer;
+	float: right;
+    margin-right: 55px;
+    margin-top: -55px;
+    margin-bottom: 10px;
+	clear: right;
+}
+.pli_check_vote span {
+	font-size: 50px;
+    padding: 10px;
+    margin: 0;
+    width: 60px;
+    text-align: center;
+    color: rgb(78, 179, 112);
+}
+.pli_yes_votes_vote {
+	background-color: rgb(78, 179, 112);
+    color: white;
+	text-align:center;
+	float: left;
+    width: 100%;
+}
+.pli_yes, .pli_no {
+	cursor:pointer;
+	box-shadow: 0px 0px 3px 0px rgb(78, 179, 112);
+}
+.pli_yes:active, .pli_no:active {
+	box-shadow: none;
+}
+
+#yes_vote {
+	float: left;
+    margin-left: 130px;
+}
+
+#s_currency_div #cancel {
+	position: absolute !important;
+    bottom: 10px !important;
+    right: 200px !important;
+}
+
+/* reply */
+#reply_info {
+	width:550px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#msg {
+	font-family: Enriqueta;
+    font-size: 20px;
+    padding: 5px;
+	padding-top: 10px;
+}
+#reply_ok {
+	background-color: rgb(42,169,219);
+	float: left;
+    clear: left;
+    margin-left: 220px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#error {
+	font-size: 30px;
+    margin-top: 8px;
+    margin-left: 30px;
+	color: rgb(245, 82, 88) !important;
+}
+#reply_info span {
+	font-size: 40px;
+    color: rgb(72, 172, 38);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+/* issue laws div */
+.issue_laws_div_divs {
+	width: 98% !important;
+    margin-left: 1%;
+    min-height: 160px;
+    clear: both;
+    box-shadow: 0px 0px 5px 0px rgb(104, 106, 120);
+    margin-top: 20px;
+    position: relative;
+	float: left;
+}
+.responsibility_name {
+	width: 100%;
+    background-color: rgb(93, 127, 159);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.issue_law {
+	position: absolute;
+    right: 10px;
+    top: 70px;
+}
+#yes_issue {
+	float: left;
+    margin-left: 130px;
+}
+.law_note {
+	position: absolute;
+    right: 5px;
+    top: 38px;
+    font-size: 17px;
+    font-family: initial;
+}
+.issue_laws_div_divs a {
+	color: black !important;
+    text-decoration: underline !important;
+}
+
+/* change gov term length */
+#change_gov_term_length_div select {
+	font-size: 25px;
+    margin-left: 10px;
+    margin-top: 30px;
+	float: left;
+	height: 36px;
+}
+#new_term_length {
+	width: 110px;
+    float: left;
+    height: 30px;
+    margin-top: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 5px;
+}
+
+/* join/leave alliance */
+#ul_head, #uj_head {
+	position: absolute;
+    left: 10px;
+    top: 65px;
+    font-size: 25px;
+}
+#union_name {
+	position: absolute;
+    left: 165px;
+    top: 65px;
+    font-size: 25px;
+    background-color: rgb(193, 193, 193);
+    border-radius: 3px;
+}
+#unions_to_join {
+	font-size: 25px;
+    height: 36px;
+    position: absolute;
+    top: 68px;
+    left: 150px;
+}
+#jaf_head {
+	position: absolute;
+    left: 500px;
+    top: 40px;
+    font-size: 25px;
+}
+#as_founder {
+	position: absolute;
+    left: 500px;
+    top: 80px;
+    font-size: 25px;
+}
+/* print money */
+#print_money_cost_head {
+	float: left;
+    font-size: 25px;
+    margin-top: 40px;
+}
+#print_amount {
+	width: 125px;
+    float: left;
+    height: 30px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 15px;
+    text-align: center;
+}
+#print_currency_abbr {
+	float: left;
+    margin-top: 40px;
+    font-size: 25px;
+    margin-left: 10px;
+}
+#product_for_money_print {
+	height: initial !important;
+	box-shadow: 0px 0px 2px 1px #345879 !important;
+}
+
+/* Impeach president */
+#impeach_president_head {
+	float: left;
+    font-size: 25px;
+    margin-top: 40px;
+}
+/* Dissolve Congress */
+#dissolve_congress_head {
+	float: left;
+    font-size: 25px;
+    margin-top: 40px;
+}
+/* Import permission/embargo. */
+#disp_imprt_perm_info {
+	float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#disp_emp_embargo_info {
+	float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    clear: left;
+}
+#disp_imprt_perm_div {
+	display:none;
+	position: absolute;
+    left: 150px;
+    top: 30px;
+}
+#product_list_for_import_perm {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    top: 15px;
+}
+#imprt_perm_days {
+	width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    top: 70px;
+}
+#imprt_perm_tax {
+	width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 285px;
+    top: 70px;
+}
+#country_list_for_import_perm {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 285px;
+    top: 15px;
+}
+#trade_info_agreement_list {
+	display: none;
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 140px;
+    top: 75px;
+}
+/* Change responsibilities. */
+#disp_resp_info {
+	position: absolute;
+    left: 10px;
+    top: 70px;
+}
+#responsibilities_info {
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	display: none;
+	z-index: 1;
+}
+div#responsibilities_info_div {
+    width: 980px;
+    height: 650px;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: white;
+    box-shadow: 0px 2px 5px 2px #345879;
+    font-family: Enriqueta;
+    font-size: 20px;
+    position: relative;
+	padding-top: 30px;
+}
+#responsibilities_info_heads {
+    position: fixed;
+    border-bottom: 1px solid black;
+    width: 967px;
+    height: 30px;
+    z-index: 1;
+    color: white;
+    background-color: rgb(84, 137, 180);
+    box-shadow: inset 0px 0px 9px 3px rgb(68, 107, 139);
+	margin-top: -30px;
+}
+#rih_gov {
+    float: left;
+    margin-left: 15px;
+    width: 260px;
+    text-align: center;
+}
+#rih_resp {
+    float: left;
+    width: 530px;
+    text-align: center;
+}
+#rid_close {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+    color: rgb(244,57,64);
+    font-size: 25px;
+    cursor: pointer;
+}
+#rih_iss {
+    float: left;
+    width: 60px;
+    text-align: center;
+}
+#rih_vot {
+    float: left;
+    width: 60px;
+    text-align: center;
+}
+.responsibilities_info_divs {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(202, 202, 207);
+}
+
+.rid_gov_position {
+	float: left;
+	width: 260px;
+	margin-left: 15px;
+}
+.rid_gov_responsibility {
+	float: left;
+	width: 530px;
+}
+.rid_gov_issue {
+    float: left;
+    width: 60px;
+    text-align: center;
+}
+.rid_gov_sign {
+	float: left;
+    width: 60px;
+    text-align: center;
+}
+
+#government_positions_list {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 140px;
+    top: 50px;
+}
+#responsibility_list {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 140px;
+    top: 100px;
+}
+#cr_action {
+	position: absolute;
+    left: 410px;
+    top: 35px;
+}
+#cr_vote {
+	position: absolute;
+    left: 410px;
+    top: 65px;
+}
+/* Declare war */
+#war_to_country_id {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+/* Sign peace treaty */
+#peace_with_country_id {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+/* Assign ministers. Assign Prime Minister*/
+#ministers_list_id, #prime_minister_id {	
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+#new_minister_input {
+	width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 330px;
+    top: 70px;
+}
+/* Assign Prime Minister. */
+#new_prime_minister_input {
+	width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+/* Change taxes. */
+#disp_product_info_tax {
+	float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#disp_income_info_tax {
+	float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    clear: left;
+}
+#disp_product_tax_div {
+	display:none;
+	position: absolute;
+    left: 150px;
+    top: 30px;
+}
+#disp_income_tax_div {
+	display: none;
+    position: absolute;
+    left: 140px;
+}
+#product_list_for_tax {
+    position: absolute;
+    left: 10px;
+    top: 45px;
+    font-size: 20px;
+    height: 35px;
+}
+#new_product_tax {
+	width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 285px;
+    top: 45px;
+}
+#income_tax_head {
+	float: left;
+    font-size: 25px;
+    margin-top: 45px;
+}
+#new_income_tax {
+	width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 230px;
+    top: 45px;
+}
+/* Travel agreement */
+#disp_allow_travel_info {
+	float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#disp_ban_travel_info {
+	float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    clear: left;
+}
+#allow_travel_info_div {
+	display: none;
+    position: absolute;
+    top: 0;
+}
+#allow_country_travel, #ban_country_travel {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 145px;
+    top: 75px;
+}
+#travel_days_input {
+	width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 440px;
+    top: 75px;
+}
+#ban_country_travel {
+	display: none;
+}
+/* Give/Ban permission for foreigners to build companies */
+#disp_build_perm_info {
+	float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+#disp_ban_build_info {
+	float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    clear: left;
+}
+#disp_build_perm_div {
+	display: none;
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+#building_list_for_build_perm {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    top: 15px;
+}
+#country_list_for_build_perm {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 285px;
+    top: 15px;
+}
+#build_perm_price {
+	width: 180px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 285px;
+    top: 70px;
+    text-align: center;
+}
+#build_info_perm_list {
+    display: none;
+    font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 140px;
+    top: 75px;
+}
+/* assign new union leader */
+#new_union_id {
+	position: absolute;
+    left: 10px;
+    top: 65px;
+    font-size: 25px;
+}
+#new_union_id_input {
+	width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 250px;
+    top: 65px;
+}
+/* Change government salaries. */
+#ministers_salary_list_id {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+#minister_salary_input {
+	width: 140px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 300px;
+    top: 70px;
+    text-align: center;
+}
+/* Change credit/deposit rate */
+#rate_input {
+    width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+#credit_deposit_type_div {
+    position: absolute;
+    left: 150px;
+    top: 50px;
+}
+#rate_type_div {
+    position: absolute;
+    left: 150px;
+    top: 90px;
+}
+/* Create new union */
+#new_union_name {
+	position: absolute;
+    left: 10px;
+	font-size: 25px;
+}
+#new_union_name_input {
+	position: absolute;
+    top: 75px;
+    left: 10px;
+    height: 25px;
+    font-size: 25px;
+    font-family: Enriqueta;
+    width: 230px;
+    text-align: center;
+}
+#union_abbr {
+	position: absolute;
+    left: 265px;
+    font-size: 25px;
+}
+#union_abbr_input {
+	position: absolute;
+    top: 75px;
+    left: 265px;
+    height: 25px;
+    font-size: 25px;
+    font-family: Enriqueta;
+    width: 220px;
+    text-align: center;
+}
+#union_color {
+	position: absolute;
+    left: 540px;
+    font-size: 25px;
+}
+#union_color_input {
+	position: absolute;
+    top: 65px;
+    left: 540px;
+    width: 140px;
+    height: 50px;
+}
+#new_union_color {
+	background-color: rgb(70,104,136);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 3px;
+}
+/* Assign new Secretary of the Treasury */
+#new_bank_manager_input {
+    width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+#bank_manager_salary_input {
+    width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: "Space Mono", monospace;
+    position: absolute;
+    left: 160px;
+    top: 70px;
+}
+/* Change production taxes */
+#products_production_tax {
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    font-size: 20px;
+    height: 35px;
+}
+#new_production_tax {
+    width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 285px;
+    top: 70px;
+}
+/* Budget Allocation. */
+#ministry_budget_list_id {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+#ministry_currency_list_id {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 280px;
+    top: 70px;
+}
+#ministry_budget_input {
+	width: 170px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 580px;
+    top: 70px;
+    text-align: center;
+}
+/* Sign defence agreement. */
+#def_with_country_id {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+#def_days_input {
+	width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 340px;
+    top: 70px;
+}
+/* Product Allocation */
+#ministry_product_list_id {
+    font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+#country_product_list_id {
+    font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 280px;
+    top: 70px;
+}
+#product_quantity_input {
+    width: 140px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 600px;
+    top: 70px;
+    text-align: center;
+}
+/* Change timezone. */
+#timezones_id {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+    width: 160px;
+}
+/* Price change to build companies for citizens. */
+#building_list_for_citiz_price {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+#build_citiz_price {
+	width: 115px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 300px;
+    top: 70px;
+    text-align: center;
+}
+/* Remove country from the union */
+#remove_union_country_id {
+    font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+/* Welcome message */
+#message_heading_input {
+	height: 35px;
+    width: 700px;
+    font-size: 25px;
+    font-family: Enriqueta;
+    margin-left: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+#cke_message_input {
+	width: 700px;
+    font-size: 20px;
+    font-family: Enriqueta;
+    margin-left: 25px;
+	margin-top: 5px;
+	float: left;
+	clear: both;
+	margin-bottom: 10px;
+}
+/* Assign titles */
+#assign_titles_id {
+    font-size: 20px;
+    height: 35px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 45px;
+}
+#title_user_id {
+    width: 140px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    float: left;
+    margin-left: 25px;
+    margin-top: 45px;
+}
+#add_remove_title_div {
+    float: left;
+    margin-left: 30px;
+    margin-top: 45px;
+}
+/* Change Capital Region */
+#new_capital_region_id {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+/* Change Region Owner */
+#owned_region_id {
+	font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 10px;
+    top: 70px;
+}
+#new_region_owner_lbl {
+    font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 265px;
+    top: 40px;
+}
+#new_owner_country_id {
+    font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 265px;
+    top: 70px;
+}
+#price_for_new_region_owner_lbl {
+    font-size: 20px;
+    height: 35px;
+    position: absolute;
+    left: 560px;
+    top: 40px;
+}
+#price_for_new_region_owner {
+    width: 140px;
+    height: 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    position: absolute;
+    left: 560px;
+    top: 70px;
+}
+
+/* warehouse_div */
+.sell {
+    background-color: rgb(128, 182, 109);
+    color: white;
+    line-height: 100%;
+    height: 25px;
+    text-align: center;
+    float: left;
+    width: 100%;
+    cursor: pointer;
+}
+.sell:active {
+    box-shadow: inset 0px 0px 5px rgb(87,87,87);
+}
+
+/* sell window */
+#countries {
+	height: 34px;
+    width: 190px;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 40px;
+    float: left;
+}
+.input {
+	width: 130px;
+    float: left;
+    height: 30px;
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    margin-left: 10px;
+}
+#tax {
+	position: absolute;
+    right: 15px;
+    top: 20px;
+    font-size: 15px;
+}
+#pop_up_info {
+	width:620px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 200px;
+	background-color:white;
+	box-shadow: 0px 2px 5px 2px #345879;
+	font-family: Enriqueta;
+    font-size: 20px;
+	position:relative;
+	overflow:auto;
+}
+#pop_up_info img {
+	height: 80px;
+    width: 110px;
+	float: left;
+	background-color: rgba(97, 171, 255, 0.1);
+}
+#pop_up_info div {
+	width: 110px;
+    height: 105px;
+    box-shadow: 0px -1px 5px 2px #345879;
+	float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+	margin-bottom: 5px;
+}
+#sell {
+	clear: left;
+    margin-left: 175px;
+    margin-top: 5px;
+	float: left;
+}
+
+/* products on sale */
+#product_offers_div {
+    width: 75.8333333%;
+    min-width: 910px;
+    float: right;
+    margin-right: 2.5%;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 20px;
+    font-family: Enriqueta;
+	display: none;
+}
+.product_on_sale {
+	width: 100%;
+	height: 100px;
+    background-color: white;
+    float: left;
+    margin-bottom: 10px;
+    position: relative;
+    box-shadow: 0px 1px 2px rgb(87,87,87);
+}
+#q {
+	float: left;
+    margin-left: 220px;
+}
+#p {
+	float: left;
+	margin-left: 110px;
+}
+#t {
+	float: left;
+	margin-left: 130px;
+}
+.pos_product_icon {
+	height: 80px;
+    width: 110px;
+	float: left;
+	box-shadow: 0px 0px 5px 2px #345879;
+    margin-left: 10px;
+    margin-top: 10px;
+	background-color: rgba(97, 171, 255, 0.1);
+}
+.country_flag {
+	width: 100px;
+    height: 52px;
+    margin-left: 20px;
+    margin-top: 25px;
+    float: left;
+    box-shadow: 0px 0px 5px 2px #345879;
+}
+.pos_quantity {
+	float: left;
+    margin-left: 20px;
+    margin-top: 35px;
+}
+.pos_price {
+    position: absolute;
+    left: 380px;
+    top: 30px;
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(47, 109, 179);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgb(87,87,87);
+    width: 100px;
+    text-align: center;
+}
+.pos_currency {
+	position: absolute;
+    left: 500px;
+    top: 35px;
+}
+.pos_tax {
+	position: absolute;
+    left: 575px;
+    top: 30px;
+    background-color: rgb(179, 47, 47);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px rgb(87,87,87);
+    width: 80px;
+    text-align: center;
+}
+.pos_remove {
+	float:right;
+	margin-top: 30px;
+    margin-right: 40px;
+}
+
+/* currency div */
+#sell_currency {
+    font-size: 30px;
+    font-family: Cantata One;
+    color: white;
+    background-color: rgb(101, 162, 106);
+    width: 190px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+    box-shadow: 0px 1px 2px rgb(53,122,56);
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+}
+#sell_currency:active {
+    box-shadow: none;
+}
+#user_currency_div {
+    float: right;
+    width: 70%;
+	display: none;
+	border-bottom: 1px solid rgb(209, 209, 209);
+    border-left: 1px solid rgb(209, 209, 209);
+    border-right: 1px solid rgb(209, 209, 209);
+}
+.ucd_info {
+    float: left;
+    width: 300px;
+    border-bottom: 1px solid gray;
+    clear: left;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.ucd_info img {
+    width: 70px;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 5px;
+    float: left;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px rgb(87,87,87);
+}
+.ucd_info p {
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    float: left;
+    font-family: 'Space Mono', monospace;
+    background-color: rgb(47, 109, 179);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px rgb(87,87,87);
+    width: 200px;
+    text-align: center;
+}
+
+/* make offer */
+#currency_exchange_controls {
+    width: 100%;
+    float: left;
+    border-top: 1px solid rgb(184, 215, 226);
+    border-bottom: 1px solid rgb(184, 215, 226);
+    height: 45px;
+    background-image: linear-gradient(#f6f6f6 0,#d1dfe6 100%);
+    position: relative;
+}
+#buy_currency_h {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #3b75b8;
+    font-weight: bold;
+}
+#buying_item {
+    float: left;
+	margin-left: 10px;
+	position: relative;
+}
+.gold_img {
+    width: 40px;
+    margin-top: 10px;
+}
+#switch_buying_items {
+    border: 1px solid #c4e6f2;
+    float: left;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #0782c1;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #edfaff;
+    padding: 0 15px;
+    box-shadow: 0 1px white;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#sell_currency_h {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: #3b75b8;
+    font-weight: bold;
+}
+#selling_item {
+    float: left;
+    margin-left: 10px;
+	position: relative;
+}
+#currency_list {
+    margin-top: 5px;
+	height: 35px;
+    border: 1px solid rgb(163, 163, 163);
+    float: left;
+    width: 335px;
+    background-color: white;
+	cursor:pointer;
+	position:relative;
+	border-radius: 3px
+}
+#currency_div {
+    left: 1px;
+    top: 41px;
+}
+
+#make_offer_div {
+    float: left;
+    width: 100%;
+	display: none;
+	box-shadow: 0 2px 0 rgb(228, 235, 239);
+    padding-bottom: 5px;
+}
+#make_offer_btn {
+	border: 1px solid #c4e6f2;
+    float: right;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #0782c1;
+    font-weight: bold;
+    margin-top: 5px;
+    background-color: #edfaff;
+    padding: 0 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0px #0782c1;
+}
+#make_offer_btn:active {
+	box-shadow:none;
+}
+#offer_currency_h {
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+	color: rgb(159, 96, 96);
+}
+#offering_item {
+    float: left;
+    margin-left: 10px;
+	position: relative;
+}
+#offering_amount {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    box-shadow: inset 0 0 1px #68a8c9;
+}
+#offer_currency_list {
+    margin-top: 5px;
+	height: 35px;
+    border: 1px solid rgb(163, 163, 163);
+    float: left;
+    width: 335px;
+    background-color: white;
+	cursor:pointer;
+	position:relative;
+	border-radius: 3px
+}
+#offer_currency_div {
+    left: 1px;
+    top: 41px;
+}
+#switch_offering_items {
+    border: 1px solid #c4e6f2;
+    float: left;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #0782c1;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #edfaff;
+    padding: 0 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 1px white;
+}
+#offer_for_currency_h {
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: rgb(159, 96, 96);
+}
+#offer_for_item {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+#offering_rate {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    box-shadow: inset 0 0 1px #68a8c9;
+}
+#place_offer_btn {
+    border: 1px solid #ae6767;
+    float: left;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #bb6e6e;
+    font-weight: bold;
+    margin-top: 7px;
+    background-color: #ffe9e9;
+    padding: 0 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 2px 0px #995b5b;
+}
+#place_offer_btn:active {
+	box-shadow: none;
+}
+
+/* currency list */
+#error_offers {
+    float: left;
+    clear: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #c33232;
+}
+#offer_currency_list span {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+}
+#offer_currency_div {
+	display:none;
+	overflow: auto;
+    height: 265px;
+    width: 335px;
+    position: absolute;
+    background-color: rgb(240, 240, 240);
+    border-bottom: 3px solid rgb(163, 163, 163);
+	cursor:pointer;
+	z-index: 1;
+}
+#offer_selected_currency {
+	width: 100%;
+    height: 35px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+	border-radius: 3px;
+    box-shadow: inset 0 0 1px 0px #67a6c6;
+}
+ #offer_selected_currency img {
+	width: 55px;
+	height: 35px;
+    float: left;
+	clear: left;
+}
+.offer_currency {
+	width: 100%;
+    height: 45px;
+    margin-bottom: 1px;
+    background-color: white;
+    cursor: pointer;
+}
+.offer_currency:hover {
+	background-color:rgba(155, 155, 155, 1);
+    color: white;
+}
+.offer_currency img {
+	width: 55px;
+	height: 35px;
+    float: left;
+	clear: left;
+	margin-top: 5px;
+    margin-bottom: 5px;
+}
+.offer_currency p, #offer_selected_currency p {
+	float: left;
+    margin: 0;
+    margin-left: 5px;
+	font-family: Enriqueta;
+    font-size: 20px;
+    margin-top: 6px;
+}
+
+/* offers */
+#user_offers {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+#user_offers_head {
+    float: left;
+    width: 100%;
+    background-color: rgb(199, 116, 116);
+    box-shadow: inset 0px 0px 9px 3px rgb(141, 87, 87);
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+#currency_offers {
+	float: left;
+    margin-top: 10px;
+	width: 100%;
+}
+#amount_head {
+	float: left;
+    margin-left: 145px;
+}
+#price_head {
+	float: left;
+    margin-left: 115px;
+}
+.offer {
+	height: 150px;
+    clear: both;
+    margin-bottom: 10px;
+    border-top: 2px solid #2d445e;
+    position: relative;
+    width: 98%;
+    margin-left: 1%;
+}
+.user_name {
+	float: left;
+    color: rgb(7, 130, 193);
+    font-weight: bold;
+}
+.user_image {
+	float: left;
+    clear: left;
+    width: 70px;
+    height: 91px;
+    display: block;
+    background-color: rgb(245,246,247);
+    border: 2px solid white;
+    box-shadow: 0px 0px 3px 0px rgb(73, 93, 111);
+    border-radius: 5px;
+}
+.offered_by {
+    position: absolute;
+    top: 123px;
+    font-size: 17px;
+}
+.amount_selling {
+	float: left;
+    font-family: 'Space Mono', monospace;
+    color: rgb(47, 109, 179);
+    width: 165px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+.rate {
+	float: left;
+    font-family: 'Space Mono', monospace;
+    color: rgb(222, 77, 77);
+    width: 175px;
+    margin-top: 30px;
+	margin-left: 10px;
+}
+.gold_rate {
+    float: left;
+    font-family: 'Space Mono', monospace;
+    color: rgb(222, 77, 77);
+    margin-top: 30px;
+	margin-left: 10px;
+}
+.offer .gold_img {
+	float: left;
+    margin-top: 30px !important;
+    margin-left: 5px;
+}
+.amount_input {
+	position: absolute;
+    left: 510px;
+    font-family: 'Space Mono', monospace;
+    width: 100px;
+    border-radius: 3px;
+    border: 1px solid #d7d7d7;
+    color: rgb(51, 51, 51);
+    box-shadow: inset 0 0 1px #68a8c9;
+    font-size: 25px;
+    top: 50px;
+    text-align: center;
+}
+.remove_offer {
+	margin-right: 10px;
+    margin-top: 25px;
+    float: right;
+}

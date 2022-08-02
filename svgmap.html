@@ -1,0 +1,568 @@
+<?php 
+include('connect_db.php');
+
+//write to visitors.
+$ip = get_ip();
+$ip_id = getIpId();
+$sql = "INSERT INTO svg_visitors VALUES('$ip_id', '$ip', CURRENT_DATE, CURRENT_TIME)";
+mysqli_query($conn, $sql);
+
+function get_ip() {
+	if(isset($_SERVER['REMOTE_ADDR']))
+		$ipaddress = $_SERVER['REMOTE_ADDR'];
+	else
+		$ipaddress = 'UNKNOWN';
+	return $ipaddress;
+}
+function getIpId() {
+	global $conn;
+	$id = 1;
+	$sql = "SELECT visitor FROM svg_visitors ORDER BY visitor";
+	$result = mysqli_query($conn, $sql);
+	if(mysqli_num_rows($result) > 0) {
+		while($row = mysqli_fetch_row($result)) {
+			list($uid) = $row;
+			$x = $x + 1;
+			if($id == $uid) {
+				$id = $id + 1;
+			}
+			else {
+				return $id;
+			}
+		}
+	}
+	return $id;
+}
+
+?>
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+	body {
+		margin:0;
+		background-color:rgb(200,200,200);
+		min-width:1500px;
+	}
+	p, h1, h2, h3 {
+		margin:0;
+	}
+	#controls {
+		float:left;
+	}
+	#showCoords {
+		padding:20px;
+	}
+	#zoom {
+		padding:20px;
+	}
+	#one {
+		width:200px;
+		padding:20px;
+		background-color:rgba(83,191,106, 0.5);
+		border-left:5px solid rgb(83,191,106);
+	}
+	#two {
+		width:200px;
+		padding:20px;
+		background-color:rgba(70,173,191, 0.5);
+		display:none;
+		border-left:5px solid rgb(70,173,191);
+	}
+	#three {
+		width:200px;
+		padding:20px;
+		background-color:rgba(191,59,52, 0.5);
+		display:none;
+		border-left:5px solid rgb(191,59,52);
+	}
+	#four {
+		width:200px;
+		padding:20px;
+		background-color:rgba(191,175,169, 0.5);
+		display:none;
+		border-left:5px solid rgb(191,175,165);
+	}
+	#five {
+		width:200px;
+		padding:20px;
+		background-color:rgba(191,175,169, 0.5);
+		border-left:5px solid rgb(191,175,165);
+	}
+	#svgOptions {
+		display:none;
+	}
+	#chgImgSize {
+		display:none;
+	}
+	#workField {
+		position:relative;
+		float:left;
+		width:1200px;
+		height:700px;
+		background-color:rgba(230,230,230, 1);
+		cursor:crosshair;
+		overflow:auto;
+		margin-top:5px;
+	}
+	img {
+		position:absolute;
+		opacity:1;
+	}
+	svg {
+		position:absolute;
+		left:0;
+		top:0;
+	}
+	polygon {
+		opacity:0.7;
+	}
+	#displayCodeDiv {
+		float:left;
+		width:1200px;
+		height:350px;
+		margin-top:25px;
+		margin-left:240px;
+		margin-bottom:25px;
+		background-color:rgb(220,220,220);
+		overflow:auto;
+	}
+	#hiddenp {
+		display:none;
+	}
+	#resSVGMap {
+		display:none;
+	}
+	#radius, #setRadius, #intext, #inputText {
+		display:none;
+	}
+</style>
+</head>
+<body>
+<script>
+$(document).ready(function(){
+	document.getElementById('uploadImg').addEventListener('click', uploadImg);
+	document.getElementById('workField').addEventListener('mousemove', getCoords);
+	document.getElementById('workField').addEventListener('click', draw);
+	document.getElementById('zoomIn').addEventListener('mousedown', zoomIn);
+	document.getElementById('zoomOut').addEventListener('mousedown', zoomOut);
+	document.getElementById('zoomIn').addEventListener('mouseup', stopZoom);
+	document.getElementById('zoomOut').addEventListener('mouseup', stopZoom);
+	document.getElementById('svg').addEventListener('click', createSVG);
+	document.getElementById('polygon').addEventListener('click', createPolygon);
+	document.getElementById('circle').addEventListener('click', createCircle);
+	document.getElementById('text').addEventListener('click', createText);
+	document.getElementById('setColor').addEventListener('click', setColor);
+	document.getElementById('setRadius').addEventListener('click', setRadius);
+	document.getElementById('inputText').addEventListener('click', setText);
+	document.getElementById('generateCode').addEventListener('click', generateCode);
+	document.getElementById('deleteBtn').addEventListener('click', deleteElement);
+	
+	var workingID;
+	var imgOn = false;
+	var t;
+	var id;
+	var coordXY = "";
+	var p = 0;
+	var c = 0;
+	var t = 0;
+	var tag = "";
+	
+	function uploadImg() {
+		var view = document.querySelector('#uploadedImg');
+		var file = document.querySelector('#inputImg').files[0];
+		var reader = new FileReader();
+       reader.onload = function () {
+           view.src = reader.result;
+       }
+       if (file) {
+           reader.readAsDataURL(file);
+		   imgOn = true;
+		   document.getElementById("two").style.display = "block";
+		   document.getElementById("chgImgSize").style.display = "block";
+       } else {
+           preview.src = "";
+       }
+	}
+	var difHeigth;
+	var difWidth;
+	function getCoords(e) {
+		var scroll = document.getElementById("workField");
+		var scrolX = scroll.offsetLeft;
+		var scrolY = scroll.offsetTop;
+		var x = Math.round(e.clientX - scrolX);
+		var y = Math.round(e.clientY - scrolY);
+		if(imgOn == true) {
+			var imageSize = document.getElementById("uploadedImg");
+			//var natHeight = imageSize.naturalHeight;
+			//var natWidth = imageSize.naturalWidth;
+			var height = imageSize.height;
+			var width = imageSize.width;	
+			//difHeigth = natHeight / height;
+			//difWidth = natWidth / width;
+			var imgScroll = document.getElementById("workField");
+			var imgX = imgScroll.scrollLeft;
+			var imgY = imgScroll.scrollTop;
+			//var x = Math.round((e.clientX - scrolX + imgX) * difWidth);
+			//var y = Math.round((e.clientY - scrolY + imgY) * difHeigth);
+			var x = Math.round(e.clientX - scrolX + imgX);
+			var y = Math.round(e.clientY - scrolY + imgY);
+		}
+		var displayCoords = "X = " + x + "<br> Y = " + y;
+		document.getElementById("showCoords").innerHTML = displayCoords;
+		if (tag == "polygon") {
+			var coordXY = x + ',' + y;
+			return coordXY;
+		}
+		else if (tag == "circle" || tag == "text") {
+			var coordXY = [x, y];
+			return coordXY;
+		}
+		
+	}
+	
+	//zoom functions
+	function zoomIn() {
+	if(imgOn == true){
+		var imageSize = document.getElementById("uploadedImg");
+		var imgScroll = document.getElementById("workField");
+		var svgSize = document.getElementById("svgTag");
+		var height = imageSize.height;
+		var width = imageSize.width;
+		var zoomIndex = (width/height) * 500;
+		imageSize.height = height + 500;
+		imageSize.width = width + zoomIndex;
+		var svgWidthB = svgSize.style.width;
+		svgWidthB = svgWidthB.replace("px", "");
+		svgSize.style.height = imageSize.height;
+		svgSize.style.width = imageSize.width;
+		var svgWidthA = svgSize.style.width;
+		svgWidthA = svgWidthA.replace("px", "");
+		zoomIndex = zoomIndex / 4;
+		var imgX = imgScroll.scrollLeft + zoomIndex;
+		var imgY = imgScroll.scrollTop + 2;
+		imgScroll.scrollLeft = imgX;
+		imgScroll.scrollTop =  imgY;
+		var svgId = "svgTag";
+		var zoomSvgIndex = svgWidthB/svgWidthA;
+		var mode = "zoom";
+		zoomSvg(zoomSvgIndex, svgId, mode);
+		var o = zoomIn;
+		zoomIO(o);
+	}
+	}
+
+	function zoomOut() {
+	if(imgOn == true){
+		var imageSize = document.getElementById("uploadedImg");
+		var imgScroll = document.getElementById("workField");
+		var svgSize = document.getElementById("svgTag");
+		var height = imageSize.height;
+		var width = imageSize.width;
+		var zoomIndex = (width/height) * 500;
+		imageSize.height = height - 500;
+		imageSize.width = width - zoomIndex;
+		var svgWidthB = svgSize.style.width;
+		svgWidthB = svgWidthB.replace("px", "");
+		svgSize.style.height = imageSize.height;
+		svgSize.style.width = imageSize.width;
+		var svgWidthA = svgSize.style.width;
+		svgWidthA = svgWidthA.replace("px", "");
+		zoomIndex = zoomIndex / 4;
+		var imgX = imgScroll.scrollLeft - zoomIndex;
+		var imgY = imgScroll.scrollTop - 2;
+		imgScroll.scrollLeft = imgX;
+		imgScroll.scrollTop =  imgY;
+		var svgId = "svgTag";
+		var zoomSvgIndex = svgWidthB/svgWidthA;
+		var mode = "zoom";
+		zoomSvg(zoomSvgIndex, svgId, mode);
+		var o = zoomOut;
+		zoomIO(o);
+	}
+	}
+	
+	function zoomIO(io) {
+		var io = io;
+		t = setTimeout(io, 100);
+	}
+	
+	function stopZoom() {
+		clearTimeout(t);
+	}
+	
+	function zoomSvg(zoomIndex, svgId, mode) {
+		var zoomIndex = zoomIndex;
+		var svg = document.getElementById(svgId).innerHTML;
+		while(svg.search(/<polygon[ *\w\=\'\">\d,]*<\/polygon>/i) >= 0) {
+			var poly = svg.match(/<polygon[ *\w\=\'\">\d,]*<\/polygon>/i);
+			document.getElementById("hiddenp").innerHTML = poly;
+			poly = document.getElementById("hiddenp").innerHTML;
+			var id = poly.match(/id *\= *[\"\']?[\w\d]*[\"\']?/i);
+			document.getElementById("hiddenp").innerHTML = id;
+			id = document.getElementById("hiddenp").innerHTML
+			id = id.replace(/id *\= *[\"\']?/gi, "");
+			id = id.replace(/\"?\'?/ig, "");
+			var points =  document.getElementById(id).getAttribute('points');
+			points = points.trim();
+			points = points.split(" ");
+			var p;
+			for(p = 0; p < points.length; p++) {
+				var a = points[p].split(",");
+				if(mode == "zoom"){
+					a[0] = Math.round(a[0] / zoomIndex);
+					a[1] = Math.round(a[1] / zoomIndex);
+				}
+				else if(mode == "generate") {
+					a[0] = Math.round(a[0] * zoomIndex);
+					a[1] = Math.round(a[1] * zoomIndex);
+				}
+				points[p] = a.join(",");
+			}
+			points = points.join(" ");
+			svg = svg.replace(/<polygon[ *\w\=\'\">\d,]*<\/polygon>/i, "");
+			document.getElementById(id).setAttribute('points', points);
+		}
+	}
+	//end zoom
+	
+	//create SVH tag
+	function createSVG() {
+		document.getElementById("three").style.display = "block";
+		document.getElementById("svgOptions").style.display = "block";
+		if(imgOn == true) {
+			var imageSize = document.getElementById("uploadedImg");
+			var height = imageSize.height;
+			var width = imageSize.width;
+		}
+		var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		svg.id = "svgTag";
+		var element = document.getElementById("SVGMap");
+		element.appendChild(svg);
+		document.getElementById("svgTag").style.width = width + "px";
+		document.getElementById("svgTag").style.height = height + "px";
+	}
+	//create polygon tag
+	function  createPolygon() {
+		tag = "polygon";
+		coordXY = "";
+		//make polygon id name increase by 1
+		p++;
+		id = "polygon" + p;
+		var poly = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+		poly.id = id;
+		var element = document.getElementById("svgTag"); 
+		element.appendChild(poly);
+		document.getElementById("four").style.display = "block";
+		document.getElementById("radius").style.display = "none";
+		document.getElementById("setRadius").style.display = "none";
+		document.getElementById("intext").style.display = "none";
+		document.getElementById("inputText").style.display = "none";
+	}
+	//create circle tag
+	function  createCircle() {
+		tag = "circle";
+		coordXY = ""; 
+		//make circle id name increase by 1
+		c++;
+		id = "circle" + c;
+		var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+		circle.id = id;
+		var element = document.getElementById("svgTag"); 
+		element.appendChild(circle);
+		document.getElementById("four").style.display = "block";
+		document.getElementById("radius").style.display = "block";
+		document.getElementById("setRadius").style.display = "block";
+		document.getElementById("intext").style.display = "none";
+		document.getElementById("inputText").style.display = "none";
+	}
+	//create text
+	function  createText() {
+		tag = "text";
+		coordXY = ""; 
+		//make text id name increase by 1
+		t++;
+		id = "text" + t;
+		var text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+		text.id = id;
+		var element = document.getElementById("svgTag"); 
+		element.appendChild(text);
+		document.getElementById("four").style.display = "block";
+		document.getElementById("radius").style.display = "none";
+		document.getElementById("setRadius").style.display = "none";
+		document.getElementById("intext").style.display = "block";
+		document.getElementById("inputText").style.display = "block";
+	}
+	//place coords into circle tag
+	//place coords into polygon tag
+	function draw(e) {
+		if(imgOn == true) {
+			var xy = getCoords(e);
+			if(tag == "polygon") {
+				coordXY = coordXY + " " + xy;
+				document.getElementById(id).setAttribute('points', coordXY);
+			}
+			else if (tag == "circle") {
+				var cx = xy[0];
+				var cy = xy[1];
+				document.getElementById(id).setAttribute('cx', cx);
+				document.getElementById(id).setAttribute('cy', cy);	
+			}
+			else if (tag == "text") {
+				var x = xy[0];
+				var y = xy[1];
+				document.getElementById(id).setAttribute('x', x);
+				document.getElementById(id).setAttribute('y', y);	
+			}
+			displaySVGCode();
+			makeReserve();
+		}
+	}
+	//display svg code on the screen
+	function displaySVGCode() {
+		var code = document.getElementById("SVGMap").innerHTML;
+		code = code.replace(/</g, "&lt;");
+		code = code.replace(/>/g, "&gt;");
+		code = code.replace(/\//g, "&#x2F;");
+		document.getElementById("displayCode").innerHTML  = code;
+	}
+	//copy to display svg code.
+	function makeReserve() {
+		var code = document.getElementById("SVGMap").innerHTML;
+		code = code.replace("svgTag", "resSvgTag");
+		document.getElementById("resSVGMap").innerHTML  = code;
+	}
+	//set color
+	function setColor() {
+		var color = document.getElementById("color").value;
+		document.getElementById(id).setAttribute('fill', color);
+		displaySVGCode();
+		makeReserve();
+	}
+	//set radius for circle
+	function setRadius() {
+		var radius = document.getElementById("radius").value;
+		document.getElementById(id).setAttribute('r', radius);
+		displaySVGCode();
+		makeReserve();
+	}
+	//set text for text tag
+	function setText() {
+		var text = document.getElementById("intext").value;
+		document.getElementById(id).innerHTML = text;
+		displaySVGCode();
+		makeReserve();
+	}
+	//make coordinates equal to the original image size and display on the screen generated SVG code
+	function generateCode() {
+		var imageSize = document.getElementById("uploadedImg");
+		var natHeight = imageSize.naturalHeight;
+		var natWidth = imageSize.naturalWidth;
+		var height = imageSize.height;
+		var width = imageSize.width;
+		zoomIndex = natWidth/width;
+		var svgId = "svgTag";
+		var mode = "generate"
+		zoomSvg(zoomIndex, svgId, mode);
+		var svgSize = document.getElementById("svgTag");
+		svgSize.style.height = natHeight;
+		svgSize.style.width = natWidth;
+		imageSize.height = natHeight;
+		imageSize.width = natWidth;
+		displaySVGCode();
+	}
+	//delete unwanted elemets
+	function deleteElement() {
+		var remove = document.getElementById("delete").value;
+		if (remove != "") {
+			var parent = document.getElementById("svgTag");
+			var child = document.getElementById(remove);
+			parent.removeChild(child);
+			displaySVGCode();
+			makeReserve();
+		}
+	}
+});
+
+</script>
+
+<div id="controls">
+<p id="test"></p>
+<p id="showCoords">X = 0<br>Y = 0</p>
+<div id="zoom">
+<button id="zoomIn">Zoom In</button>
+<button id="zoomOut">Zoom Out</button>
+</div>
+<div id="one">
+	<div id="oneA">
+		<p>Use Image</p>
+		<input id="inputImg" type="file">
+		<button id="uploadImg">Upload</button>
+	</div>
+	<br>
+	<div id="oneB">
+	</div>
+	
+	
+</div>
+
+<div id="two">
+	<div id="chgImgSize">
+		<p>Change Image Size</p>
+		<input id="setWidth" type="text" placeholder="Set Width">
+		<input id="setHeigth" type="text" placeholder="Set Heigth">
+		<button id="setSize">Set Size</button>
+	</div>
+	
+	<p>Select Mode</p>
+	<div id="mode">
+	<button id="svg">SVG</button>
+	<button id="imgMap">Image Map</button>
+	</div>
+</div>
+
+<div id="three">
+	<div id="svgOptions">
+		<button id="polygon">Polygon</button>
+		<button id="circle">Circle</button>
+		<button id="text">Text</button>
+	</div>
+</div>
+
+<div id="four">
+	<input id="color" type="text" placeholder="rgba(0,0,0, 0.5)">
+	<button id="setColor">Set Color</button>
+	
+	<input id="radius" type="text" placeholder="0">
+	<button id="setRadius">Set Radius</button>
+	
+	<input id="intext" type="text" placeholder="Text..">
+	<button id="inputText">Set Text</button>
+</div>
+
+<div id="five">
+	<button id="generateCode">Generate Code</button>
+	<br>
+	<br>
+	<input id="delete" type="text" placeholder="Element ID">
+	<button id="deleteBtn">Delete Element</button>
+</div>
+</div>
+
+<div id="workField">
+	<img id="uploadedImg">
+	
+	<div id="SVGMap">
+	</div>
+	<div id="resSVGMap">
+	</div>
+</div>
+
+<div id="displayCodeDiv">
+	<code id="displayCode">
+	</code>
+</div>
+<p id="hiddenp"></p>
+</body>
+</html>

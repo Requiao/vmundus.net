@@ -1,0 +1,56 @@
+.union_list_div {
+	border: 1px solid gray;
+    box-shadow: 0px 0px 3px 0px rgb(87,87,87);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clear: both;
+    float: left;
+    width: 98%;
+    margin-left: 1%;
+    padding-bottom: 10px;
+}
+.union_flag {
+	width: 200px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+}
+.union_name {
+	float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 25px;
+}
+.union_desc {
+	font-style: italic;
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    float: left;
+    margin-left: 1%;
+    margin-top: 10px;
+    width: 96%;
+    clear: both;
+	overflow: hidden;
+}
+.union_leader {
+	position: absolute;
+    color: black;
+    top: 50px;
+    left: 220px;
+}
+.details {
+	display: block;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+#cancel {
+	float: left;
+    margin-left: 75px;
+    margin-bottom: 10px;
+}
